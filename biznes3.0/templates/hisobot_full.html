@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>KOTTA BOLA VIP SERVICE</title>
+
+<!-- Agar tashqi CSS ishlatsangiz, shu linkga o'zgartiring:
+<link rel="stylesheet" href="/static/style.css">
+-->
+
+<style>
+:root{
+  --bg: #0f1720;           /* sahifa fon */
+  --surface: #161a1f;      /* karta fon */
+  --muted-surface: #1f2328;
+  --card-gradient-from: #20232a;
+  --accent-green: #00b894;
+  --accent-blue: #0984e3;
+  --accent-blue-2: #74b9ff;
+  --text: #f5f6fa;
+  --muted: #b2bec3;
+  --danger: #ff6b6b;
+  --warning: #fdcb6e;
+  --radius: 14px;
+  --glass: rgba(255,255,255,0.03);
+  --shadow: 0 6px 24px rgba(2,6,23,0.6);
+  --card-padding: 22px;
+  --max-width: 980px;
+  --transition: 200ms ease;
+  font-family: "Inter", "Segoe UI", Roboto, sans-serif;
+}
+
+/* Basic layout */
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  background: linear-gradient(180deg,var(--bg) 0%, #0b0d10 100%);
+  color:var(--text);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  padding:24px;
+}
+
+/* Container */
+.container{
+  max-width:var(--max-width);
+  margin:0 auto;
+  padding:18px;
+}
+
+/* Header */
+.header {
+  display:flex;
+  gap:16px;
+  align-items:center;
+  justify-content:space-between;
+  margin-bottom:18px;
+}
+.brand {
+  display:flex;
+  gap:12px;
+  align-items:center;
+}
+.brand img{height:44px; width:auto; border-radius:8px}
+.brand-title{font-weight:700; color:var(--accent-blue); font-size:1.15rem}
+.controls {
+  display:flex;
+  gap:10px;
+  align-items:center;
+  flex-wrap:wrap;
+}
+
+/* Filter bar */
+.filter-bar {
+  display:flex;
+  gap:10px;
+  align-items:center;
+}
+.select, .input {
+  background:var(--surface);
+  border:1px solid rgba(255,255,255,0.04);
+  color:var(--text);
+  padding:8px 10px;
+  border-radius:8px;
+  font-size:0.95rem;
+  outline:none;
+  transition:box-shadow var(--transition);
+}
+.select:focus, .input:focus { box-shadow: 0 4px 18px rgba(8,132,227,0.12) }
+
+/* Export button */
+.btn {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  background:linear-gradient(90deg,var(--accent-green), #00cec9);
+  color:#fff;
+  border:none;
+  padding:8px 14px;
+  border-radius:10px;
+  cursor:pointer;
+  font-weight:600;
+  transition: transform var(--transition);
+}
+.btn:hover{ transform:translateY(-2px) }
+
+/* Title */
+.hisobot-title {
+  text-align:left;
+  color:var(--accent-blue);
+  font-size:1.5rem;
+  font-weight:700;
+  margin:0 0 14px 0;
+}
+
+/* Cards list */
+.hisobot-cards-list{
+  display:flex;
+  flex-direction:column;
+  gap:18px;
+  margin-top:8px;
+}
+
+/* Single card */
+.order-card{
+  background: linear-gradient(145deg, var(--card-gradient-from), var(--muted-surface));
+  border-radius:var(--radius);
+  padding:var(--card-padding);
+  box-shadow: var(--shadow);
+  display:flex;
+  gap:12px;
+  align-items:flex-start;
+  transition: transform var(--transition), box-shadow var(--transition);
+  border:1px solid rgba(255,255,255,0.03);
+}
+.order-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 40px rgba(2,6,23,0.6);
+}
+
+/* Left badge (icon) and content */
+.card-badge{
+  min-width:56px;
+  height:56px;
+  border-radius:10px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  border:1px solid rgba(255,255,255,0.02);
+  font-size:1.3rem;
+}
+.card-body{
+  flex:1;
+  display:flex;
+  flex-direction:column;
+  gap:6px;
+}
+
+/* Title & meta row */
+.order-card-title{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  font-weight:700;
+  color:var(--accent-green);
+  font-size:1.05rem;
+}
+.meta-row{
+  display:flex;
+  gap:12px;
+  align-items:center;
+  flex-wrap:wrap;
+}
+.order-label{ color:var(--muted); font-size:0.95rem; }
+.order-status{
+  font-weight:700;
+  font-size:0.95rem;
+}
+
+/* Status variants */
+.order-status.completed { color: var(--accent-green); }
+.order-status.pending { color: var(--warning); }
+.order-status.canceled { color: var(--danger); }
+
+/* Actions */
+.card-actions{
+  display:flex;
+  gap:8px;
+  align-items:center;
+}
+.order-btn {
+  background:transparent;
+  border:1px solid rgba(255,255,255,0.06);
+  color:var(--text);
+  padding:8px 14px;
+  border-radius:10px;
+  cursor:pointer;
+  font-weight:600;
+}
+.order-btn.primary {
+  background: linear-gradient(90deg,var(--accent-blue),var(--accent-blue-2));
+  border:none;
+  color:#fff;
+}
+
+/* Modal */
+.modal {
+  display:none;
+  position:fixed;
+  inset:0;
+  z-index:9999;
+  background: rgba(4,6,12,0.65);
+  align-items:center;
+  justify-content:center;
+  padding:20px;
+}
+.modal[aria-hidden="false"]{ display:flex }
+.modal-content{
+  width:100%;
+  max-width:680px;
+  background:#0f1720;
+  border-radius:12px;
+  padding:20px;
+  border:1px solid rgba(255,255,255,0.03);
+  box-shadow: 0 18px 60px rgba(2,6,23,0.7);
+  animation: popIn 220ms ease;
+  color:var(--text);
+}
+@keyframes popIn {
+  from { opacity:0; transform:translateY(-8px) scale(0.995) }
+  to { opacity:1; transform:translateY(0) scale(1) }
+}
+.modal-close{
+  background:transparent;
+  border:none;
+  color:var(--accent-blue);
+  font-size:1.2rem;
+  cursor:pointer;
+}
+
+/* Modal grid */
+.modal-grid{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  gap:12px;
+}
+.modal-grid .row{ background:transparent; padding:8px; border-radius:8px; color:var(--muted) }
+
+/* Empty state */
+.hisobot-empty{
+  text-align:center;
+  margin:48px auto;
+  color:var(--muted);
+  background: linear-gradient(90deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  padding:28px;
+  border-radius:12px;
+  border:1px solid rgba(255,255,255,0.02);
+}
+
+/* Responsive */
+@media (max-width:800px){
+  .modal-grid{ grid-template-columns: 1fr }
+  .brand-title{display:none}
+  .order-card{ padding:16px }
+  .card-badge{ min-width:48px; height:48px }
+  .controls{ width:100%; justify-content:flex-end }
+  .filter-bar{ width:100%; gap:8px; justify-content:flex-end }
+  .btn{ padding:7px 10px }
+}
+
+/* Small screens */
+@media (max-width:480px){
+  body{ padding:12px }
+  .hisobot-title{ font-size:1.2rem }
+  .order-card{ flex-direction:column; gap:10px }
+  .card-actions{ width:100%; justify-content:space-between }
+  .order-btn{ width:48% }
+  .btn{ width:100% }
+}
+</style>
+</head>
+<body>
+<div class="container" role="main">
+
+  <!-- Header / Brand + Controls -->
+  <div class="header" role="banner">
+    <div class="brand" aria-hidden="false">
+      <!-- Misol uchun SVG yoki rasim: /static/logo.png -->
+      <img src="/static/weblogo.png" alt="KOTTA BOLA TAXI logo" onerror="this.style.display='none'">
+      <div>
+        <div class="brand-title">KOTTA BOLA VIP SERVICE — Hisobotlar</div>
+        <div style="color:var(--muted); font-size:0.85rem">To'liq hisobot</div>
+      </div>
+    </div>
+
+    <div class="controls" role="toolbar" aria-label="Filtrlar va harakatlar">
+      <div class="filter-bar" style="align-items:center">
+        <input id="searchInput" type="search" class="input" placeholder="Qidiruv: manzil, haydovchi, ID..." aria-label="Qidiruv">
+        <select id="statusFilter" class="select" aria-label="Holat bo'yicha filtr">
+          <option value="">Holatlar: Barchasi</option>
+          <option value="completed">Bajarilgan</option>
+          <option value="pending">Jarayonda</option>
+          <option value="canceled">Bekor qilingan</option>
+        </select>
+        <select id="orgFilter" class="select" aria-label="Tashkilot bo'yicha filtr">
+          <option value="">Tashkilot: Barchasi</option>
+          {% set orgs = hisobot | map(attribute='org_name') | select | list %}
+          {% for org in orgs|unique if org %}
+            <option value="{{ org }}">{{ org }}</option>
+          {% endfor %}
+        </select>
+      </div>
+      <button id="exportBtn" class="btn" title="Eksport CSV" aria-label="Eksport CSV">
+        <!-- SVG icon -->
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M12 3v12" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M8 11l4 4 4-4" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+          <rect x="3" y="17" width="18" height="4" rx="1" stroke="white" stroke-width="1.2"/>
+        </svg>
+        Eksport CSV
+      </button>
+    </div>
+  </div>
+
+
+  <h2 class="hisobot-title">To‘liq Hisobot</h2>
+  <form method="get" action="{{ url_for('hisobot_full') }}" style="margin-bottom:18px; display:flex; gap:12px; align-items:center; flex-wrap:wrap">
+    <label for="from_date">Boshlanish sanasi:</label>
+    <input type="date" id="from_date" name="from_date" value="{{ from_date or '' }}" class="input">
+    <label for="to_date">Tugash sanasi:</label>
+    <input type="date" id="to_date" name="to_date" value="{{ to_date or '' }}" class="input">
+    <button type="submit" class="btn">Filtrlash</button>
+  </form>
+
+  <!-- HISOBOTLAR RO'YXATI -->
+  {% if hisobot and hisobot|length > 0 %}
+  <div class="hisobot-cards-list" id="cardsList">
+    {% for item in hisobot %}
+      <!-- data-status used for filtering -->
+      <div class="order-card" data-status="{{ item.status|lower if item.status else '' }}"
+           data-search="{{ (item.destination_address ~ ' ' ~ item.yandex_id ~ ' ' ~ item.driver_name ~ ' ' ~ item.staff_name)|lower }}"
+           data-org="{{ item.org_name|lower if item.org_name else '' }}">
+        <div class="card-badge" aria-hidden="true">🚕</div>
+
+        <div class="card-body">
+          <div class="order-card-title">
+            Buyurtma: {{ item.destination_address or '-' }}
+            <span style="margin-left:8px; font-weight:600; color:var(--muted); font-size:0.9rem">#{{ item.yandex_id or '-' }}</span>
+          </div>
+
+          <div class="meta-row">
+            <div class="order-label">Tashkilot: <strong style="color:var(--text)">{{ item.org_name or '-' }}</strong></div>
+            <div class="order-label">Xodim: {{ item.staff_name or '-' }}</div>
+            <div class="order-status {{
+    'completed' if item.status and item.status.lower() in ['bajarildi', 'completed']
+    else 'pending' if item.status and item.status.lower() in ['jarayonda', 'pending']
+    else 'canceled' if item.status and item.status.lower() in ['bekor qilingan', 'canceled']
+    else ''
+}}">
+              Holati: {{ item.status or '-' }}
+            </div>
+          </div>
+
+          <div class="meta-row">
+            <div class="order-label">Tarif: <strong>{{ item.tarif_nomi or '-' }}</strong></div>
+            <div class="order-label">Chaqirish narxi: <strong>{{ item.safar_chaqirish_narxi or '-' }}</strong> so‘m</div>
+            <div class="order-label">Safar vaqti: <strong>{{ item.safar_vaqti_min or '-' }}</strong> daqiqa (<strong>{{ item.safar_vaqti_narxi or '-' }}</strong> so‘m)</div>
+            <div class="order-label">Safar masofasi: <strong>{{ item.mileage or '-' }}</strong> m (<strong>{{ item.safar_masofa_narxi or '-' }}</strong> so‘m)</div>
+            <div class="order-label">Yakuniy narx (QQS bilan): <strong style="color:var(--accent-green)">{{ item.yakuniy_narx or '-' }}</strong> so‘m</div>
+          </div>
+
+          <div style="display:flex; gap:8px; margin-top:8px" class="card-actions">
+            <button class="order-btn" onclick="showModal({{ loop.index0 }})" aria-haspopup="dialog" aria-controls="modal-{{ loop.index0 }}">Batafsil</button>
+            <button class="order-btn primary" onclick="copyYandexID('{{ item.yandex_id or '' }}')">ID ni nusxalash</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal -->
+      <div class="modal" id="modal-{{ loop.index0 }}" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modalTitle-{{ loop.index0 }}">
+        <div class="modal-content">
+          <div style="display:flex; justify-content:space-between; align-items:center; gap:12px; margin-bottom:12px">
+            <h3 id="modalTitle-{{ loop.index0 }}" style="margin:0; color:var(--accent-blue)">Buyurtma batafsil ma'lumot</h3>
+            <div>
+              <button class="modal-close" onclick="closeModal({{ loop.index0 }})" aria-label="Yopish">✕</button>
+            </div>
+          </div>
+
+          <div class="modal-grid" role="document">
+            <div class="row"><strong>Yandex ID:</strong><div>{{ item.yandex_id or '-' }}</div></div>
+            <div class="row"><strong>Biznes ID:</strong><div>{{ item.biznes_id or '-' }}</div></div>
+            <div class="row"><strong>Haydovchi:</strong><div>{{ item.driver_name or '-' }}</div></div>
+            <div class="row"><strong>Avto raqam:</strong><div>{{ item.number or '-' }}</div></div>
+            <div class="row"><strong>Kategoriya:</strong><div>{{ item.category or '-' }}</div></div>
+            <div class="row"><strong>Xodim:</strong><div>{{ item.staff_name or '-' }}</div></div>
+            <div class="row"><strong>Status:</strong><div>{{ item.status or '-' }}</div></div>
+            <div class="row"><strong>Manzil:</strong><div>{{ item.destination_address or '-' }}</div></div>
+            <div class="row"><strong>To‘lov turi:</strong><div>{{ item.payment_method or '-' }}</div></div>
+            <div class="row"><strong>Masofa:</strong><div>{{ item.mileage or '-' }}</div></div>
+            <div class="row"><strong>Vaqt (kutish):</strong><div>{{ item.event_waiting_at or '-' }}</div></div>
+            <div class="row"><strong>Vaqt (bajarildi):</strong><div>{{ item.event_complete_at or '-' }}</div></div>
+            <div class="row"><strong>Tarif:</strong><div>{{ item.tarif_nomi or '-' }}</div></div>
+            <div class="row"><strong>Chaqirish narxi:</strong><div>{{ item.safar_chaqirish_narxi or '-' }} so‘m</div></div>
+            <div class="row"><strong>Safar vaqti:</strong><div>{{ item.safar_vaqti_min or '-' }} daqiqa ({{ item.safar_vaqti_narxi or '-' }} so‘m)</div></div>
+            <div class="row"><strong>Safar masofasi:</strong><div>{{ item.mileage or '-' }} m ({{ item.safar_masofa_narxi or '-' }} so‘m)</div></div>
+            <div class="row"><strong>Yakuniy narx (QQS bilan):</strong><div style="color:var(--accent-green)">{{ item.yakuniy_narx or '-' }} so‘m</div></div>
+          </div>
+
+          <div style="display:flex; gap:10px; justify-content:flex-end; margin-top:14px">
+            <button class="order-btn" onclick="closeModal({{ loop.index0 }})">Yopish</button>
+            <button class="order-btn primary" onclick="downloadOrderAsCSV({{ loop.index0 }})">Eksport buyurtma</button>
+          </div>
+        </div>
+      </div>
+
+    {% endfor %}
+  </div>
+  {% else %}
+    <div class="hisobot-empty">
+      <div style="font-size:1.05rem; font-weight:600; color:var(--text)">📄 Hisobot topilmadi</div>
+      <div style="margin-top:8px">Filtrlarni tekshiring yoki boshqa sana oralig‘ini tanlang.</div>
+      <div style="margin-top:12px"><button class="btn" onclick="location.reload()">Qayta yuklash</button></div>
+    </div>
+  {% endif %}
+
+  <footer style="margin-top:28px; color:var(--muted); font-size:0.85rem; text-align:center">
+    © KOTTA BOLA TAXI — Hisobot tizimi 
+  </footer>
+</div>
+
+<script>
+/* --- Basic utilities --- */
+function $(sel){ return document.querySelector(sel) }
+function $all(sel){ return Array.from(document.querySelectorAll(sel)) }
+
+/* --- Filtering & Search --- */
+const statusFilter = document.getElementById('statusFilter')
+const orgFilter = document.getElementById('orgFilter')
+const searchInput = document.getElementById('searchInput')
+const cardsList = document.getElementById('cardsList')
+
+function applyFilters(){
+  const status = statusFilter ? statusFilter.value.toLowerCase() : ''
+  const org = orgFilter ? orgFilter.value.toLowerCase() : ''
+  const q = searchInput ? searchInput.value.trim().toLowerCase() : ''
+
+  $all('.order-card').forEach(card=>{
+    const cardStatus = (card.dataset.status || '').toLowerCase()
+    const cardOrg = (card.dataset.org || '').toLowerCase()
+    const cardSearch = (card.dataset.search || '').toLowerCase()
+
+    let visible = true
+    if(status && !cardStatus.includes(status)) visible = false
+    if(org && !cardOrg.includes(org)) visible = false
+    if(q){
+      // search in combined fields
+      if(!cardSearch.includes(q)) visible = false
+    }
+    card.style.display = visible ? '' : 'none'
+  })
+}
+
+/* debounce helper */
+function debounce(fn, wait=250){
+  let t; return (...a)=>{ clearTimeout(t); t=setTimeout(()=>fn(...a), wait) }
+}
+
+if(statusFilter) statusFilter.addEventListener('change', applyFilters)
+if(orgFilter) orgFilter.addEventListener('change', applyFilters)
+if(searchInput) searchInput.addEventListener('input', debounce(applyFilters, 200))
+
+/* --- Modal functions --- */
+function showModal(idx){
+  const modal = document.getElementById('modal-' + idx)
+  if(!modal) return
+  modal.setAttribute('aria-hidden','false')
+  // prevent background scroll
+  document.body.style.overflow = 'hidden'
+  modal.style.display = 'flex'
+}
+function closeModal(idx){
+  const modal = document.getElementById('modal-' + idx)
+  if(!modal) return
+  modal.setAttribute('aria-hidden','true')
+  modal.style.display = 'none'
+  document.body.style.overflow = ''
+}
+/* Close modal on click outside */
+window.addEventListener('click', (e)=>{
+  $all('.modal').forEach(modal=>{
+    if(modal.getAttribute('aria-hidden')==='false' && e.target === modal){
+      modal.setAttribute('aria-hidden','true')
+      modal.style.display = 'none'
+      document.body.style.overflow = ''
+    }
+  })
+})
+/* Close on ESC */
+document.addEventListener('keydown', (e)=>{
+  if(e.key === 'Escape'){
+    $all('.modal').forEach(m=>{
+      if(m.getAttribute('aria-hidden') === 'false'){
+        m.setAttribute('aria-hidden','true'); m.style.display='none'
+      }
+    })
+    document.body.style.overflow = ''
+  }
+})
+
+/* --- Copy ID helper --- */
+function copyYandexID(id){
+  if(!id) return alert('ID mavjud emas')
+  navigator.clipboard?.writeText(id).then(()=>{ alert('ID nusxalandi: ' + id) }, ()=>{ alert('Nusxalashning iloji bo‘lmadi') })
+}
+
+/* --- Export all visible cards to CSV --- */
+function exportVisibleToCSV(){
+  const rows = []
+  const headers = ['yandex_id','biznes_id','driver_name','number','category','staff_name','status','destination_address','payment_method','mileage','event_waiting_at','event_complete_at']
+  rows.push(headers.join(','))
+
+  $all('.order-card').forEach(card=>{
+    if(card.style.display === 'none') return
+    // rehydrate values from DOM: we rely on data-search / children content - better to get from server in real app
+    // For demo we'll extract from the innerText in modal if exists
+    const idx = card.querySelector('.order-btn')?.getAttribute('onclick')?.match(/\d+/)?.[0]
+    if(idx === undefined) return
+    const modal = document.getElementById('modal-' + idx)
+    if(!modal) return
+    // collect values by matching labels in modal
+    const map = {}
+    modal.querySelectorAll('.modal-grid .row').forEach(row=>{
+      const key = row.querySelector('strong')?.innerText?.replace(':','')?.trim()
+      const val = row.querySelector('div')?.innerText?.trim() || ''
+      if(key) map[key] = val
+    })
+    const line = [
+      map['Yandex ID']||'',
+      map['Biznes ID']||'',
+      map['Haydovchi']||'',
+      map['Avto raqam']||'',
+      map['Kategoriya']||'',
+      map['Staff']||'',
+      map['Status']||'',
+      map['Manzil']||'',
+      map['To‘lov turi']||'',
+      map['Masofa']||'',
+      map['Vaqt (kutish)']||'',
+      map['Vaqt (bajarildi)']||''
+    ]
+    rows.push(line.map(v=>`"${(v||'').replace(/"/g,'""')}"`).join(','))
+  })
+
+  const csv = rows.join('\n')
+  const blob = new Blob([csv], {type:'text/csv;charset=utf-8;'})
+  const url = URL.createObjectURL(blob)
+  const a = document.createElement('a')
+  a.href = url
+  a.download = 'hisobot_export.csv'
+  document.body.appendChild(a)
+  a.click()
+  a.remove()
+  URL.revokeObjectURL(url)
+}
+
+  // Eksport tugmasi faqat filtrlash bo'lsa ko'rinadi
+  function showExportBtn() {
+    const fromDate = document.getElementById('from_date')?.value
+    const toDate = document.getElementById('to_date')?.value
+    const orgVal = document.getElementById('orgFilter')?.value
+    const btn = document.getElementById('exportBtn')
+    if (btn) {
+      if (fromDate || toDate || orgVal) {
+        btn.style.display = ''
+      } else {
+        btn.style.display = 'none'
+      }
+    }
+  }
+  document.getElementById('from_date')?.addEventListener('change', showExportBtn)
+  document.getElementById('to_date')?.addEventListener('change', showExportBtn)
+  document.getElementById('orgFilter')?.addEventListener('change', showExportBtn)
+  showExportBtn()
+  document.getElementById('exportBtn')?.addEventListener('click', exportVisibleToCSV)
+
+/* --- Export single order (from modal) --- */
+function downloadOrderAsCSV(idx){
+  const modal = document.getElementById('modal-' + idx)
+  if(!modal) return
+  const map = {}
+  modal.querySelectorAll('.modal-grid .row').forEach(row=>{
+    const key = row.querySelector('strong')?.innerText?.replace(':','')?.trim()
+    const val = row.querySelector('div')?.innerText?.trim() || ''
+    if(key) map[key] = val
+  })
+  const headers = Object.keys(map)
+  const values = headers.map(h=>`"${(map[h]||'').replace(/"/g,'""')}"`)
+  const csv = headers.join(',') + '\n' + values.join(',')
+  const blob = new Blob([csv], {type:'text/csv;charset=utf-8'})
+  const url = URL.createObjectURL(blob)
+  const a = document.createElement('a'); a.href = url; a.download = `order_${idx}.csv`; document.body.appendChild(a); a.click(); a.remove(); URL.revokeObjectURL(url)
+}
+</script>
+</body>
+</html>

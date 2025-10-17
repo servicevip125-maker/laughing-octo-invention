@@ -1,0 +1,110 @@
+{
+  "items": [
+    {
+      "id": "56f94c4c7cbf41799fe40c2a055113bb",
+      "name": "DO`STLAR TAXI MCHJ",
+      "limits": {
+        "taxi": {
+          "budget": null
+        },
+        "eats2": {
+          "budget": null
+        },
+        "tanker": {
+          "budget": null
+        },
+        "cargo": {
+          "budget": null
+        },
+        "travel_common": {
+          "budget": null
+        }
+      },
+      "parent_id": null,
+      "balance": 0,
+      "comments": []
+    },
+    {
+      "id": "c31e4c565a4c418987ad7a94a9f927d9",
+      "name": "DRIVE TAXI 777 MCHJ",
+      "limits": {
+        "taxi": {
+          "budget": null
+        },
+        "eats2": {
+          "budget": null
+        },
+        "tanker": {
+          "budget": null
+        },
+        "cargo": {
+          "budget": null
+        },
+        "travel_common": {
+          "budget": null
+        }
+      },
+      "parent_id": null,
+      "balance": 4819733.0,
+      "comments": [
+        {
+          "amount": 5000000.0,
+          "comment": "hisob to`ldirish ",
+          "action": "add",
+          "time": 1760556511
+        }
+      ]
+    },
+    {
+      "id": "a3c24f2961034fc186a97ba226171c04",
+      "name": "MULTICARD",
+      "limits": {
+        "taxi": {
+          "budget": null
+        },
+        "eats2": {
+          "budget": null
+        },
+        "tanker": {
+          "budget": null
+        },
+        "cargo": {
+          "budget": null
+        },
+        "travel_common": {
+          "budget": null
+        }
+      },
+      "parent_id": null,
+      "balance": -137932,
+      "comments": []
+    },
+    {
+      "id": "ee3983a76efd4b92bc27d22b68e612d2",
+      "name": "TEST",
+      "limits": {
+        "taxi": {
+          "budget": null
+        },
+        "eats2": {
+          "budget": null
+        },
+        "tanker": {
+          "budget": null
+        },
+        "cargo": {
+          "budget": null
+        },
+        "travel_common": {
+          "budget": null
+        }
+      },
+      "parent_id": null,
+      "balance": 0,
+      "comments": []
+    }
+  ],
+  "limit": 100,
+  "offset": 0,
+  "total_amount": 4
+}

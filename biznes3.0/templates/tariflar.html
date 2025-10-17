@@ -1,0 +1,45 @@
+{% extends "home.html" %}
+{% block content %}
+<div class="tariflar-container">
+	<h2>Tariflar</h2>
+	<p>Tariflar bo‘limi kontenti. USTIDA ISHLAYAPMIZ</p>
+	{% if is_admin %}
+	<form id="add-tarif-form" method="POST" action="/add_tarif" class="tarif-form">
+		<label for="name">Tarifga nom bering:</label>
+		<input type="text" id="name" name="name" required>
+
+		<label for="call_price">Tarif uchun chaqirish narxini kiriting:</label>
+		<input type="number" id="call_price" name="call_price" required>
+
+		<label for="distance_price">Tarif uchun masofa (metr) narxini kiriting:</label>
+		<input type="number" id="distance_price" name="distance_price" required>
+
+		<label for="minute_price">Tarif uchun daqiqa narxini kiriting:</label>
+		<input type="number" id="minute_price" name="minute_price" required>
+
+		<label for="vat">Tarif uchun QQS narxini kiriting:</label>
+		<input type="number" id="vat" name="vat" required>
+
+		<button type="submit" class="save-btn">Saqlash</button>
+	</form>
+	{% endif %}
+	<hr>
+	<div id="tariflar-list">
+		<!-- Saqlangan tariflar ro‘yxati bu yerda ko‘rsatiladi -->
+		{% for tarif in tariflar %}
+		<div class="tarif-item">
+			<h3>{{ tarif.name }}</h3>
+			<ul>
+				<li>Chaqirish narxi: {{ tarif.call_price }}</li>
+				<li>Masofa narxi: {{ tarif.distance_price }}</li>
+				<li>Daqiqa narxi: {{ tarif.minute_price }}</li>
+				<li>QQS narxi: {{ tarif.vat }}</li>
+			</ul>
+			{% if is_admin %}
+			<a href="/edit_tarif/{{ tarif.id }}" class="edit-btn">Tahrirlash</a>
+			{% endif %}
+		</div>
+		{% endfor %}
+	</div>
+</div>
+{% endblock %}

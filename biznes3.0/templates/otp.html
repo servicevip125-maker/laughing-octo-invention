@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tasdiqlash kodi - KOTTA BOLA VIP SERVICE</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap');
+    body {
+      background: linear-gradient(145deg, #000, #111);
+      color: white;
+      font-family: "Poppins", sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .otp-container {
+      background: rgba(255,255,255,0.06);
+      border-radius: 20px;
+      padding: 40px 32px;
+      box-shadow: 0 0 60px rgba(255,255,255,0.1);
+      text-align: center;
+      min-width: 320px;
+      max-width: 400px;
+    }
+    h2 {
+      font-size: 22px;
+      font-weight: 700;
+      margin-bottom: 18px;
+      letter-spacing: 1px;
+    }
+    .otp-input {
+      width: 100%;
+      padding: 14px;
+      border-radius: 10px;
+      border: none;
+      font-size: 18px;
+      margin-bottom: 18px;
+      background: rgba(255,255,255,0.12);
+      color: #fff;
+      text-align: center;
+      outline: none;
+      transition: background 0.2s;
+    }
+    .otp-input:focus {
+      background: rgba(255,255,255,0.22);
+      box-shadow: 0 0 10px #fff;
+    }
+    .otp-btn {
+      width: 100%;
+      padding: 14px;
+      border-radius: 10px;
+      border: none;
+      background: linear-gradient(90deg, #fff, #999);
+      color: #111;
+      font-size: 17px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    .otp-btn:hover {
+      background: linear-gradient(90deg, #fff, #ccc);
+      color: #000;
+    }
+    .alert {
+      background: linear-gradient(90deg, #d63031 0%, #fd7272 100%);
+      color: #fff;
+      border-radius: 8px;
+      padding: 10px;
+      margin-bottom: 16px;
+      font-weight: 500;
+    }
+  </style>
+</head>
+<body>
+  <div class="otp-container">
+    <h2>Tasdiqlash kodi</h2>
+    {% with messages = get_flashed_messages(with_categories=true) %}
+      {% if messages %}
+        {% for category, message in messages %}
+          <div class="alert {{ category }}">{{ message }}</div>
+        {% endfor %}
+      {% endif %}
+    {% endwith %}
+    <form method="POST">
+      <input type="text" name="otp" maxlength="6" class="otp-input" placeholder="SMS kodni kiriting" required {% if expired %}disabled{% endif %}>
+      <button type="submit" class="otp-btn" {% if expired %}disabled{% endif %}>Tasdiqlash</button>
+    </form>
+    {% if expired %}
+    <form method="POST" style="margin-top:10px;">
+      <input type="hidden" name="resend" value="1">
+      <button type="submit" class="otp-btn" style="background:linear-gradient(90deg,#fd7272,#d63031);color:#fff;">Qayta yuborish</button>
+    </form>
+    {% endif %}
+    <div id="timer" style="margin-top:18px;opacity:0.7;font-size:15px;"></div>
+    <script>
+      var left = {{ left|default(0) }};
+      var timerDiv = document.getElementById('timer');
+      var lastUpdate = Date.now();
+      function formatTime(sec) {
+        var m = Math.floor(sec/60);
+        var s = sec%60;
+        return (m<10?"0":"")+m+":"+(s<10?"0":"")+s;
+      }
+      function updateTimer() {
+        var now = Date.now();
+        var elapsed = Math.floor((now - lastUpdate)/1000);
+        lastUpdate = now;
+        left -= elapsed;
+        if (left > 0) {
+          timerDiv.textContent = 'Qolgan vaqt: ' + formatTime(left);
+        } else {
+          timerDiv.textContent = 'Kod eskirdi. Qayta yuborish tugmasini bosing.';
+        }
+      }
+      timerDiv.textContent = 'Qolgan vaqt: ' + formatTime(left);
+      var interval = setInterval(function() {
+        updateTimer();
+        if (left <= 0) clearInterval(interval);
+      }, 1000);
+      document.addEventListener('visibilitychange', function() {
+        if (!document.hidden) {
+          updateTimer();
+        }
+      });
+    </script>
+    <p style="margin-top:8px;opacity:0.7;font-size:15px;">Telefoningizga yuborilgan kodni kiriting.</p>
+  </div>
+</body>
+</html>

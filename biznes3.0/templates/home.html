@@ -1,0 +1,1217 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VIP SERVICE</title>
+  <style>
+        .stat-blocks {
+          margin-bottom: 24px;
+          display: flex;
+          flex-wrap: wrap;
+          gap: 32px;
+          justify-content: center;
+        }
+        .stat-card {
+          background: rgba(255,255,255,0.13);
+          border-radius: 18px;
+          box-shadow: 0 4px 32px #00b89422;
+          padding: 32px 24px;
+          min-width: 220px;
+          max-width: 320px;
+          text-align: left;
+          position: relative;
+          transition: box-shadow 0.2s, transform 0.2s;
+          backdrop-filter: blur(8px);
+          border: 1px solid #00b89433;
+        }
+        .stat-card:hover {
+          box-shadow: 0 8px 40px #74b9ff44;
+          transform: translateY(-4px) scale(1.04);
+        }
+        .stat-card h3 {
+          font-size: 19px;
+          color: #00b894;
+          margin-bottom: 8px;
+          display: flex;
+          align-items: center;
+          gap: 8px;
+        }
+        .stat-card h3 i {
+          font-size: 1.2em;
+          color: #74b9ff;
+        }
+        .stat-val {
+          font-size: 22px;
+          font-weight: 700;
+          color: #fff;
+          line-height: 1.5;
+          letter-spacing: 1px;
+          text-shadow: 0 2px 8px #00b89422;
+        }
+        .main-header {
+          background: linear-gradient(90deg,#00b894,#74b9ff);
+          color: #fff;
+          border-radius: 18px;
+          box-shadow: 0 2px 24px #00b89444;
+          padding: 24px 0 18px 0;
+          margin-bottom: 18px;
+          text-align: center;
+          font-size: 32px;
+          font-weight: 800;
+          letter-spacing: 2px;
+          position: relative;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 18px;
+        }
+        .main-header i {
+          font-size: 2em;
+          color: #fff;
+          filter: drop-shadow(0 0 8px #74b9ff);
+        }
+        .dashboard-bg {
+          position: absolute;
+          top: 0; left: 0; width: 100%; height: 100%;
+          z-index: -1;
+          background: radial-gradient(circle at 60% 40%, #00b89433 0%, #222 100%);
+          animation: bgmove 8s infinite alternate linear;
+          opacity: 0.7;
+          border-radius: 20px;
+        }
+        @keyframes bgmove {
+          0% { background-position: 0% 0%; }
+          100% { background-position: 100% 100%; }
+        }
+    .profile-org-login {
+      margin-top: 18px;
+      background: rgba(255,255,255,0.04);
+      border-radius: 16px;
+      padding: 24px 18px;
+      box-shadow: 0 2px 16px rgba(0,184,148,0.08);
+    }
+    .profile-org-login table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 18px;
+    }
+    .profile-org-login th, .profile-org-login td {
+      padding: 10px 8px;
+      text-align: left;
+    }
+    .profile-org-login th {
+      background: #222;
+      color: #fff;
+      font-weight: 700;
+      font-size: 15px;
+      border-bottom: 2px solid #00b894;
+    }
+    .profile-org-login tr {
+      background: #333;
+      transition: background 0.2s;
+    }
+    .profile-org-login tr:hover {
+      background: #222;
+    }
+    .profile-org-login input[type="text"] {
+      width: 120px;
+      padding: 7px 10px;
+      border-radius: 6px;
+      border: none;
+      background: rgba(255,255,255,0.13);
+      color: #fff;
+      font-size: 15px;
+      outline: none;
+      margin-right: 2px;
+    }
+    .profile-org-login input[type="text"][name^="phone_"] {
+      width: 140px;
+    }
+    .profile-org-login button {
+      background: linear-gradient(90deg, #00b894, #74b9ff);
+      color: #fff;
+      border: none;
+      padding: 7px 18px;
+      border-radius: 6px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.2s, transform 0.2s;
+    }
+    .profile-org-login button:hover {
+      background: linear-gradient(90deg, #74b9ff, #00b894);
+      transform: scale(1.07);
+    }
+    .profile-org-login a {
+      color: #74b9ff;
+      text-decoration: none;
+      font-weight: 600;
+      padding: 4px 10px;
+      border-radius: 6px;
+      transition: background 0.2s;
+    }
+    .profile-org-login a:hover {
+      background: #222;
+      color: #fff;
+    }
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap');
+    body {
+      background: linear-gradient(145deg, #000, #111);
+      color: white;
+      font-family: "Poppins", sans-serif;
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+    }
+    .sidebar {
+  width: 240px;
+  background: rgba(255,255,255,0.08);
+  border-right: 1px solid rgba(255,255,255,0.15);
+  box-shadow: 2px 0 24px rgba(255,255,255,0.08);
+  padding: 32px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  z-index: 100;
+    }
+    .sidebar .logo {
+      margin-bottom: 32px;
+    }
+    .sidebar .logo img {
+      width: 80px;
+      height: auto;
+      filter: drop-shadow(0 0 25px #fff);
+      animation: spin 6s linear infinite alternate;
+    }
+    @keyframes spin {
+      0% { transform: rotateY(0deg); }
+      100% { transform: rotateY(360deg); }
+    }
+    .menu {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-bottom: 32px;
+    }
+    .menu a {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      width: 80%;
+      margin: 0 auto;
+      padding: 12px 18px;
+      border-radius: 8px;
+      background: rgba(255,255,255,0.10);
+      color: #fff;
+      font-size: 16px;
+      font-weight: 600;
+      text-decoration: none;
+      text-align: left;
+      transition: background 0.2s, color 0.2s;
+    }
+    .menu a i {
+      font-size: 1.2em;
+      color: #74b9ff;
+      min-width: 22px;
+      text-align: center;
+      transition: color 0.2s;
+    }
+    .menu a:hover i {
+      color: #0984e3;
+    }
+    .menu a.logout {
+      background: linear-gradient(90deg, #d63031 0%, #fd7272 100%);
+      color: #fff;
+      font-weight: bold;
+      margin-top: 24px;
+    }
+    .menu a.logout i {
+      color: #fff;
+    }
+    .menu a.logout:hover i {
+      color: #d63031;
+    }
+    .main-content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin-left: 240px;
+    }
+    .welcome-box {
+      background: rgba(255,255,255,0.06);
+      border-radius: 20px;
+      padding: 48px 36px;
+      box-shadow: 0 0 60px rgba(255,255,255,0.1);
+      text-align: center;
+      backdrop-filter: blur(10px);
+    }
+    .welcome-box h1 {
+      font-size: 28px;
+      font-weight: 800;
+      margin-bottom: 12px;
+      letter-spacing: 2px;
+      text-shadow: 0 0 15px #fff, 0 0 40px rgba(255,255,255,0.3);
+    }
+    .welcome-box .welcome {
+      font-size: 18px;
+      margin-bottom: 24px;
+      opacity: 0.85;
+    }
+    .sub-menu {
+      margin-bottom: 18px;
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+    }
+    .sub-btn {
+      padding: 10px 22px;
+      border-radius: 8px;
+      border: none;
+      background: linear-gradient(90deg, #fff, #999);
+      color: #111;
+      font-size: 15px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    .sub-btn:hover {
+      background: linear-gradient(90deg, #fff, #ccc);
+      color: #000;
+    }
+    .order-content {
+      margin-top: 10px;
+    }
+    .contact-list {
+      margin-top: 18px;
+      text-align: left;
+      max-width: 340px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .contact-item {
+      margin-bottom: 16px;
+      background: rgba(255,255,255,0.08);
+      border-radius: 8px;
+      padding: 12px 16px;
+      font-size: 15px;
+      box-shadow: 0 2px 8px rgba(255,255,255,0.05);
+    }
+    .contact-item a {
+      color: #74b9ff;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .contact-item a:hover {
+      text-decoration: underline;
+      color: #0984e3;
+    }
+    .cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  justify-content: flex-start;
+  margin-top: 32px;
+    }
+    .org-card {
+  background: linear-gradient(135deg, #232526 0%, #414345 100%);
+  border-radius: 18px;
+  box-shadow: 0 6px 32px rgba(0,0,0,0.22);
+  padding: 32px 24px 24px 24px;
+  min-width: 320px;
+  max-width: 370px;
+  color: #fff;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  transition: box-shadow 0.2s, transform 0.2s;
+  font-size: 17px;
+  position: relative;
+  border: 1px solid rgba(255,255,255,0.08);
+    }
+    .org-card:hover {
+      box-shadow: 0 4px 32px #74b9ff44;
+      transform: translateY(-4px) scale(1.03);
+    }
+    .org-title {
+  font-size: 24px;
+  font-weight: 800;
+  color: #00b894;
+  margin-bottom: 2px;
+  letter-spacing: 0.5px;
+  word-break: break-word;
+    }
+    .org-id {
+  font-size: 13px;
+  color: #b2bec3;
+  margin-bottom: 8px;
+  font-family: monospace;
+    }
+    .empty {
+      text-align: center;
+      opacity: 0.7;
+      padding: 24px;
+      width: 100%;
+    }
+    .org-balance {
+  font-size: 20px;
+  margin-bottom: 12px;
+  color: #fff;
+  font-weight: 700;
+  background: linear-gradient(90deg, #00b894, #74b9ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  letter-spacing: 1px;
+    }
+    .balance-form {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 6px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    .balance-form input, .balance-form select {
+      border-radius: 6px;
+      border: none;
+      padding: 7px 10px;
+      font-size: 15px;
+      background: rgba(255,255,255,0.13);
+      color: #fff;
+      outline: none;
+    }
+    .balance-form button {
+      background: linear-gradient(90deg, #00b894, #74b9ff);
+      color: #fff;
+      font-weight: 600;
+      border-radius: 6px;
+      border: none;
+      padding: 7px 18px;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    .balance-form button:hover {
+      background: linear-gradient(90deg, #74b9ff, #00b894);
+    }
+    .bal-input, .bal-comment {
+      border-radius: 6px;
+      border: none;
+      padding: 7px 10px;
+      font-size: 15px;
+      background: rgba(255,255,255,0.13);
+      color: #fff;
+      outline: none;
+      margin-right: 6px;
+      margin-bottom: 6px;
+    }
+    .icon-btn {
+      background: linear-gradient(90deg, #00b894, #74b9ff);
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      min-width: 120px;
+      height: 38px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+      margin-right: 4px;
+      cursor: pointer;
+      transition: background 0.2s, transform 0.2s;
+      font-weight: 600;
+      gap: 8px;
+    }
+    .icon-btn i {
+      font-size: 18px;
+      margin-right: 4px;
+    }
+    .icon-btn:hover {
+      background: linear-gradient(90deg, #74b9ff, #00b894);
+      transform: scale(1.08);
+    }
+    .fa-plus {
+      color: #00ff00;
+      font-weight: bold;
+    }
+    .fa-minus {
+      color: #ff3b3b;
+      font-weight: bold;
+    }
+    .bal-history {
+  margin-top: 14px;
+  background: rgba(0,184,148,0.13);
+  border-radius: 10px;
+  padding: 14px 16px;
+  box-shadow: 0 2px 12px rgba(0,184,148,0.08);
+    }
+    .bal-history ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .bal-history li {
+  font-size: 15px;
+  color: #fff;
+  margin-bottom: 8px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  border-bottom: 1px solid rgba(255,255,255,0.07);
+  padding-bottom: 4px;
+    }
+    .bal-hist-action {
+  font-weight: 700;
+  color: #00b894;
+  font-size: 18px;
+  margin-right: 2px;
+    }
+    .bal-hist-action:after {
+      content: '';
+      margin-right: 2px;
+    }
+    .bal-hist-amount {
+  font-weight: 600;
+  color: #74b9ff;
+  font-size: 15px;
+  margin-right: 4px;
+    }
+    .bal-hist-comment {
+  font-size: 14px;
+  color: #b2bec3;
+  font-style: italic;
+  margin-right: 8px;
+    }
+    .bal-hist-date {
+  font-size: 13px;
+  color: #636e72;
+  margin-left: auto;
+    }
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="sidebar">
+    <!-- Hisobot tugmasi faqat hisobot bo'limida -->
+    <div class="logo">
+      <img src="/static/veblogo.png" alt="KOTTA BOLA Logo">
+    </div>
+    <nav class="menu">
+  <a href="#" onclick="showSection('main')"><i class="fa-solid fa-house"></i>Bosh menyu</a>
+  <a href="#" onclick="showSection('orgs')"><i class="fa-solid fa-building"></i>Tashkilotlar</a>
+  <a href="#" onclick="showSection('staff')"><i class="fa-solid fa-users"></i>Xodimlar</a>
+  <a href="#" onclick="showSection('kirimchiqim')" class="menu-link"><i class="fa-solid fa-arrow-right-arrow-left"></i>Kirim/Chiqim</a>
+  {% if username == 'admin' %}
+  <a href="#" onclick="showSection('orders')"><i class="fa-solid fa-list"></i>Buyurtmalar</a>
+  {% endif %}
+  <a href="#" onclick="showSection('tariffs')"><i class="fa-solid fa-coins"></i>Tariflar</a>
+  <a href="#" onclick="showSection('report')"><i class="fa-solid fa-chart-line"></i>Hisobot</a>
+  <a href="#" onclick="showSection('contact')"><i class="fa-solid fa-envelope"></i>Aloqa</a>
+  <a href="#" onclick="showSection('profile')"><i class="fa-solid fa-user"></i>Profil</a>
+  <a href="/logout" class="logout"><i class="fa-solid fa-right-from-bracket"></i>Chiqish</a>
+    </nav>
+  </div>
+  <div class="main-content">
+    <div class="welcome-box" id="main-section" style="position:relative;">
+      <div class="dashboard-bg"></div>
+      <div class="main-header"><i class="fa-solid fa-house"></i> KOTTA BOLA VIP SERVICE</div>
+      <div class="welcome" style="font-size:18px; margin-bottom:18px; opacity:0.85;">Xush kelibsiz, <b>{{ username }}</b>!</div>
+      <div style="margin-bottom:18px; font-size:16px; color:#00b894;">
+        Oxirgi yangilanish: <span id="last-update">{{ last_update }}</span>
+        <button id="refresh-btn" class="icon-btn" style="margin-left:18px;">Yangilash</button>
+      </div>
+  <div class="diagram-section" style="margin:32px 0;">
+        <h2 style="font-size:22px; color:#74b9ff; margin-bottom:18px;">Statistika Diagrammalari</h2>
+        <div style="display:flex;flex-wrap:wrap;gap:32px;justify-content:center;">
+          <div style="background:rgba(255,255,255,0.08);border-radius:16px;padding:24px;box-shadow:0 2px 16px #74b9ff22;">
+            <h3 style="color:#00b894;"><i class="fa-solid fa-building-columns"></i> Tashkilotlar balanslari</h3>
+            <canvas id="balansChart" width="340" height="220"></canvas>
+          </div>
+          <div style="background:rgba(255,255,255,0.08);border-radius:16px;padding:24px;box-shadow:0 2px 16px #74b9ff22;">
+            <h3 style="color:#00b894;"><i class="fa-solid fa-arrow-right-arrow-left"></i> Kirim/Chiqim trendi (so‘nggi 7 kun)</h3>
+            <canvas id="trendChart" width="340" height="220"></canvas>
+          </div>
+        </div>
+      </div>
+      <div class="stat-blocks">
+        {% if username == 'admin' %}
+        <div class="stat-card">
+          <h3>Jami xodimlar</h3>
+          <div class="stat-val">{{ jami_xodimlar_soni }}</div>
+        </div>
+        <div class="stat-card">
+          <h3>Jami balans</h3>
+          <div class="stat-val">{{ '{:,.0f}'.format(jami_balans).replace(',', ' ') }} so‘m</div>
+        </div>
+        <div class="stat-card">
+          <h3>Oxirgi 24 soat kirim/chiqim</h3>
+          <div class="stat-val">Kirim: {{ oxirgi_24soat_kirim_soni }} ({{ '{:,.0f}'.format(oxirgi_24soat_kirim_summa).replace(',', ' ') }} so‘m)<br>Chiqim: {{ oxirgi_24soat_chiqim_soni }} ({{ '{:,.0f}'.format(oxirgi_24soat_chiqim_summa).replace(',', ' ') }} so‘m)</div>
+        </div>
+        <div class="stat-card">
+          <h3>Jami buyurtmalar</h3>
+          <div class="stat-val">{{ jami_buyurtmalar_soni }}</div>
+        </div>
+        <div class="stat-card">
+          <h3>Faol tashkilotlar foizi</h3>
+          <div class="stat-val">{{ faol_tashkilot_foizi }}%</div>
+        </div>
+        <div class="stat-card">
+          <h3>Faol xodimlar foizi</h3>
+          <div class="stat-val">{{ faol_xodim_foizi }}%</div>
+        </div>
+        <div class="stat-card">
+          <h3>TOP-3 kirim tashkilot</h3>
+          <div class="stat-val">{% for tid, val in top3_kirim_tashkilot %}{% set org = tashkilotlar_json|selectattr('id', 'equalto', tid)|first %}{{ org['name'] }}: {{ '{:,.0f}'.format(val).replace(',', ' ') }} so‘m<br>{% endfor %}</div>
+        </div>
+        <div class="stat-card">
+          <h3>TOP-3 chiqim tashkilot</h3>
+          <div class="stat-val">{% for tid, val in top3_chiqim_tashkilot %}{% set org = tashkilotlar_json|selectattr('id', 'equalto', tid)|first %}{{ org['name'] }}: {{ '{:,.0f}'.format(val).replace(',', ' ') }} so‘m<br>{% endfor %}</div>
+        </div>
+        {% else %}
+        {% set stat = tashkilot_stat.get(user_org_id) %}
+        <div class="stat-card"><h3>Xodimlar soni</h3><div class="stat-val">{{ stat.xodimlar_soni }}</div></div>
+        <div class="stat-card"><h3>Balans</h3><div class="stat-val">{{ '{:,.0f}'.format(stat.balans).replace(',', ' ') }} so‘m</div></div>
+        <div class="stat-card"><h3>Kirim/Chiqim (24 soat)</h3><div class="stat-val">Kirim: {{ stat.kirim_soni }} ({{ '{:,.0f}'.format(stat.kirim_summa).replace(',', ' ') }} so‘m)<br>Chiqim: {{ stat.chiqim_soni }} ({{ '{:,.0f}'.format(stat.chiqim_summa).replace(',', ' ') }} so‘m)</div></div>
+        <div class="stat-card"><h3>Buyurtmalar soni</h3><div class="stat-val">{{ stat.buyurtmalar_soni }}</div></div>
+        <div class="stat-card"><h3>Faol xodimlar foizi</h3><div class="stat-val">{{ stat.faol_xodim_foizi }}%</div></div>
+        <div class="stat-card"><h3>Oxirgi 5 tranzaksiya</h3><div class="stat-val">{% for t in stat.oxirgi_5_tranzaksiya %}{{ t['amount'] }} so‘m ({{ t['comment'] }})<br>{% endfor %}</div></div>
+        {% endif %}
+      </div>
+      <style>
+        .stat-blocks {margin-bottom:24px;}
+        .stat-card {background:#222;border-radius:14px;box-shadow:0 2px 18px rgba(0,184,148,0.08);padding:24px 18px;min-width:220px;max-width:320px;text-align:left;}
+        .stat-card h3 {font-size:18px;color:#00b894;margin-bottom:8px;}
+        .stat-val {font-size:20px;font-weight:700;color:#fff;line-height:1.5;}
+      </style>
+    </div>
+    <script>
+      // Balans by organization (bar chart)
+      const orgNames = [{% for org in tashkilotlar_json %}'{{ org.name }}'{% if not loop.last %}, {% endif %}{% endfor %}];
+      const orgBalances = [{% for org in tashkilotlar_json %}{{ org.balance|default(0) }}{% if not loop.last %}, {% endif %}{% endfor %}];
+      const balansCtx = document.getElementById('balansChart').getContext('2d');
+      new Chart(balansCtx, {
+        type: 'bar',
+        data: {
+          labels: orgNames,
+          datasets: [{
+            label: 'Balans (so‘m)',
+            data: orgBalances,
+            backgroundColor: '#00b89499',
+            borderColor: '#00b894',
+            borderWidth: 2
+          }]
+        },
+        options: {
+          responsive: false,
+          plugins: { legend: { display: false } },
+          scales: { y: { beginAtZero: true } }
+        }
+      });
+
+      // Kirim/Chiqim trend (line chart, last 7 days)
+      const trendLabels = [{% for d in trend_days %}'{{ d }}'{% if not loop.last %}, {% endif %}{% endfor %}];
+      const kirimData = [{% for v in trend_kirim %}{{ v }}{% if not loop.last %}, {% endif %}{% endfor %}];
+      const chiqimData = [{% for v in trend_chiqim %}{{ v }}{% if not loop.last %}, {% endif %}{% endfor %}];
+      const trendCtx = document.getElementById('trendChart').getContext('2d');
+      new Chart(trendCtx, {
+        type: 'line',
+        data: {
+          labels: trendLabels,
+          datasets: [
+            {
+              label: 'Kirim',
+              data: kirimData,
+              borderColor: '#00b894',
+              backgroundColor: '#00b89433',
+              fill: true,
+              tension: 0.3
+            },
+            {
+              label: 'Chiqim',
+              data: chiqimData,
+              borderColor: '#d63031',
+              backgroundColor: '#d6303133',
+              fill: true,
+              tension: 0.3
+            }
+          ]
+        },
+        options: {
+          responsive: false,
+          plugins: { legend: { display: true } },
+          scales: { y: { beginAtZero: true } }
+        }
+      });
+    </script>
+    <div class="welcome-box" id="orgs-section" style="display:none;">
+      <h1>Tashkilotlar</h1>
+      <div class="cards-container">
+        {% for org in tashkilotlar_json %}
+        <div class="org-card">
+          <div class="org-title">{{ org['name'] }}</div>
+          <div class="org-id">ID: {{ org['id'] }}</div>
+          <div class="org-balance">Balans: <span id="bal-{{ org['id'] }}">{{ '{:,.0f}'.format(org.get('balance', 0)).replace(',', ' ') }}</span> so‘m</div>
+          <form method="POST" action="/update_balance" class="balance-form">
+            {% if username == 'admin' %}
+            <input type="hidden" name="org_id" value="{{ org['id'] }}">
+            <input type="number" name="amount" placeholder="Summani kiriting" required class="bal-input">
+            <input type="text" name="comment" placeholder="Kommentariya" class="bal-comment" required>
+            <button type="submit" name="action" value="add" class="icon-btn" title="Hisob to‘ldirish">
+              <i class="fa-solid fa-plus"></i> Hisob to‘ldirish
+            </button>
+            <button type="submit" name="action" value="subtract" class="icon-btn" title="Ayirish">
+              <i class="fa-solid fa-minus"></i> Ayirish
+            </button>
+            {% endif %}
+          </form>
+          {% if org.get('comments') %}
+          <div class="bal-history">
+            <b>Kommentariyalar:</b>
+            <ul>
+              {% for c in org['comments']|reverse %}
+              <li>
+                <span class="bal-hist-action">{% if c['action']=='add' %}+{% else %}-{% endif %}</span>
+                <span class="bal-hist-amount">{{ c['amount'] }} so‘m</span>
+                <span class="bal-hist-comment">{{ c['comment'] }}</span>
+                <span class="bal-hist-date">({{ c['time']|datetime }})</span>
+              </li>
+              {% endfor %}
+            </ul>
+          </div>
+          {% endif %}
+        </div>
+        {% endfor %}
+        {% if tashkilotlar_json|length == 0 %}
+        <div class="empty">Tashkilotlar topilmadi.</div>
+        {% endif %}
+      </div>
+    </div>
+    <div class="welcome-box" id="staff-section" style="display:none;">
+      <h1>Xodimlar</h1>
+      <div style="margin-bottom:18px;">
+        <label for="staff-org-filter" style="font-weight:600;">Tashkilot bo‘yicha filtrlash:</label>
+        <select id="staff-org-filter" style="padding:7px 14px; border-radius:8px; font-size:15px; margin-left:8px;">
+          <option value="">Barchasi</option>
+          {% for org in all_orgs %}
+            <option value="{{ org['name'] }}">{{ org['name'] }}</option>
+          {% endfor %}
+        </select>
+      </div>
+      <div class="cards-container" id="staff-cards-container">
+        {% for x in xodimlar_json %}
+        <div class="org-card" data-org="{{ x.get('org_name', '') }}">
+          <div class="org-title">{{ x.get('fullname', '') }}</div>
+          <div style="margin-bottom:8px; font-size:17px; font-weight:600; color:#00b894;">{{ x.get('phone', '') }}</div>
+          <div style="margin-bottom:8px; font-size:15px; font-weight:600;">
+            {% if x.get('is_active') %}
+              <span style="color:#00b894;">Aktiv</span>
+            {% else %}
+              <span style="color:#d63031;">Aktiv emas</span>
+            {% endif %}
+          </div>
+          <div class="org-id">ID: {{ x.get('id', '') }}</div>
+          <div style="margin-top:8px; font-size:15px; color:#74b9ff; font-weight:600;">Tashkilot: {{ x.get('org_name', '') }}</div>
+        </div>
+        {% endfor %}
+        {% if xodimlar_json|length == 0 %}
+        <div class="empty">Xodimlar topilmadi.</div>
+        {% endif %}
+      </div>
+      <script>
+      document.getElementById('staff-org-filter').addEventListener('change', function() {
+        var val = this.value;
+        var cards = document.querySelectorAll('#staff-cards-container .org-card');
+        cards.forEach(function(card) {
+          if (!val || card.getAttribute('data-org') === val) {
+            card.style.display = '';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+      document.getElementById('refresh-btn').onclick = function() {
+        fetch('/update_biznes_orders', {method:'POST'})
+          .then(r => r.json())
+          .then(data => {
+            if(data.success){
+              if(document.getElementById('last-update'))
+                document.getElementById('last-update').textContent = data.last_update;
+              alert('Buyurtmalar yangilandi!');
+            }else{
+              alert('Yangilashda xatolik!');
+            }
+          });
+      };
+      </script>
+    </div>
+    <div class="welcome-box" id="orders-section" style="display:none;">
+      {% if username == 'admin' %}
+      <h1>Buyurtmalar</h1>
+      <div class="sub-menu">
+        <button onclick="showOrderSub('yandex')" class="sub-btn">Yandex buyurtmalar</button>
+        <button onclick="showOrderSub('biznes')" class="sub-btn">Biznes buyurtmalar</button>
+      </div>
+      <div id="yandex-orders" class="order-content" style="display:block;">
+        <h2>Yandex buyurtmalar</h2>
+        <button onclick="window.open('/yandex_buyurtmalar', '_blank')" class="sub-btn">Yandex buyurtmalarni ko‘rish</button>
+        <div id="yandex-order-list"></div>
+      </div>
+      <div id="biznes-orders" class="order-content" style="display:none;">
+        <h2>Biznes buyurtmalar</h2>
+        <button onclick="window.open('/biznes_buyurtmalar', '_blank')" class="sub-btn">Buyurtmalarni ko‘rish</button>
+        <div id="biznes-order-list"></div>
+      </div>
+      {% endif %}
+    </div>
+    <div class="welcome-box" id="report-section" style="display:none;">
+      <h1>Hisobot</h1>
+      <p>Hisobot bo‘limi kontenti.</p>
+      <div style="margin:24px 0; text-align:center;">
+        <a href="{{ url_for('hisobot_full') }}" target="_blank">
+          <button class="profile-org-login button" style="background:linear-gradient(90deg,#00b894,#74b9ff);color:#fff;border:none;padding:10px 24px;border-radius:8px;font-weight:600;cursor:pointer;">To‘liq hisobotni ko‘rish</button>
+        </a>
+      </div>
+    </div>
+    <div class="welcome-box" id="contact-section" style="display:none;">
+      <h1>Aloqa</h1>
+      <p>Biz bilan bog‘lanish uchun quyidagi usullardan foydalaning:</p>
+      <div class="contact-list">
+        <div class="contact-item">
+          <b>Telefon:</b> <a href="tel:+998500043311">+998 50 004 33 11</a>
+        </div>
+        <div class="contact-item">
+          <b>Email:</b> <a href="mailto:info@kottabola.uz">kottabola.vip@yandex.com</a>
+        </div>
+        <div class="contact-item">
+          <b>Telegram:</b> <a href="https://t.me/KOTTABOLA_VIPSERVICE" target="_blank" rel="noopener">@KOTTABOLA_VIPSERVICE</a>
+        </div>
+        <div class="contact-item">
+          <b>Manzil:</b> Toshkent sh., Chilonzor tumani, 18-mavze, 8-uy
+        </div>
+      </div>
+    </div>
+    <div class="welcome-box" id="profile-section" style="display:none;">
+      <h1>Profil</h1>
+      <div class="profile-org-login">
+        <h2>Tashkilotlar uchun login-parol yaratish</h2>
+        <form method="POST" action="/save_org_login">
+          <table>
+            <tr>
+              <th>Tashkilot nomi</th>
+              <th>Login</th>
+              <th>Parol</th>
+              <th>Telefon</th>
+              <th>Saqlash</th>
+            </tr>
+            {% for org in tashkilotlar_json %}
+            <tr>
+              <td>{{ org['name'] }}</td>
+              <td><input type="text" name="login_{{ org['id'] }}" value="" placeholder="Login"></td>
+              <td><input type="text" name="password_{{ org['id'] }}" value="" placeholder="Parol"></td>
+              <td><input type="text" name="phone_{{ org['id'] }}" value="" placeholder="Telefon"></td>
+              <td><button type="submit" name="org_id" value="{{ org['id'] }}">Saqlash</button></td>
+            </tr>
+            {% endfor %}
+          </table>
+        </form>
+        <h2>Saqlangan loginlar</h2>
+        <table>
+          <tr>
+            <th>Tashkilot</th>
+            <th>Login</th>
+            <th>Parol</th>
+            <th>Telefon</th>
+            <th>Tahrirlash</th>
+            <th>O‘chirish</th>
+          </tr>
+          {% for user in users_json %}
+          <tr>
+            <td>{{ user['org_name'] if user.get('org_name') else user['username'] }}</td>
+            <td>{{ user['username'] }}</td>
+            <td>{{ user['password'] }}</td>
+            <td>{{ user['phone'] }}</td>
+            <td><a href="/edit_org_login/{{ user['username'] }}">Tahrirlash</a></td>
+            <td><a href="/delete_org_login/{{ user['username'] }}">O‘chirish</a></td>
+          </tr>
+          {% endfor %}
+        </table>
+      </div>
+    </div>
+    <style>
+      body, .welcome-box, #tariffs-section {
+        background: #111 !important;
+        color: #fff !important;
+      }
+      .tarif-form {
+        background: #222;
+        border-radius: 8px;
+        padding: 24px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.18);
+        max-width: 400px;
+        margin-bottom: 32px;
+        color: #fff;
+      }
+      .form-row {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 16px;
+      }
+      .form-row label {
+        font-weight: 500;
+        margin-bottom: 4px;
+        color: #fff;
+      }
+      .form-row input {
+        padding: 8px 12px;
+        border: 1px solid #444;
+        border-radius: 4px;
+        font-size: 16px;
+        background: #181818;
+        color: #fff;
+      }
+      .tarif-save-btn {
+        background: #007bff;
+        color: #fff;
+        border: none;
+        padding: 10px 24px;
+        border-radius: 4px;
+        font-size: 16px;
+        cursor: pointer;
+        margin-top: 8px;
+        transition: background 0.2s;
+      }
+      .tarif-save-btn:hover {
+        background: #0056b3;
+      }
+      .columns {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 28px;
+      }
+      .pro-card {
+        background: linear-gradient(135deg, #222 0%, #333 100%);
+        border-radius: 16px;
+        box-shadow: 0 4px 16px rgba(0,0,0,0.18);
+        padding: 28px 24px 22px 24px;
+        min-width: 220px;
+        max-width: 340px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        position: relative;
+        border: 1.5px solid #333;
+        transition: box-shadow 0.2s, border 0.2s;
+        color: #fff;
+      }
+      .pro-card:hover {
+        box-shadow: 0 8px 24px rgba(0,0,0,0.33);
+        border: 1.5px solid #007bff;
+      }
+      .tarif-title {
+        font-size: 22px;
+        font-weight: 700;
+        margin-bottom: 14px;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+      .tarif-info {
+        font-size: 16px;
+        margin-bottom: 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        color: #fff;
+      }
+      .tarif-info span {
+        background: #181818;
+        border-radius: 6px;
+        padding: 6px 12px;
+        margin-bottom: 2px;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        color: #fff;
+      }
+      .price {
+        color: #28a745;
+        font-weight: 600;
+        margin-left: 4px;
+      }
+      .tarif-edit-btn {
+        background: #28a745;
+        color: #fff;
+        border: none;
+        padding: 8px 22px;
+        border-radius: 6px;
+        font-size: 16px;
+        cursor: pointer;
+        text-decoration: none;
+        transition: background 0.2s;
+        box-shadow: 0 2px 6px rgba(40,167,69,0.18);
+      }
+      .tarif-edit-btn:hover {
+        background: #1e7e34;
+      }
+      .no-tarif {
+        color: #bbb;
+        font-size: 16px;
+        margin-top: 20px;
+      }
+    </style>
+    <div class="welcome-box" id="tariffs-section" style="display:none;">
+      <h1 style="margin-bottom: 20px;">Tariflar</h1>
+      {% if username == 'admin' %}
+      <form method="POST" action="/save_tarif" class="tarif-form">
+        <div class="form-row">
+          <label>Tarif nomi:</label>
+          <input type="text" name="name" required placeholder="Masalan, Standart">
+        </div>
+        <div class="form-row">
+          <label>Chaqirish narxi:</label>
+          <input type="number" name="call_price" required placeholder="10000">
+        </div>
+        <div class="form-row">
+          <label>Daqiqa narxi:</label>
+          <input type="number" name="minute_price" required placeholder="500">
+        </div>
+        <div class="form-row">
+          <label>Masofa (m) narxi:</label>
+          <input type="number" name="distance_price" required placeholder="100">
+        </div>
+        <div class="form-row">
+          <label>QQS (%):</label>
+          <input type="number" name="vat" required placeholder="12">
+        </div>
+        <button type="submit" class="btn tarif-save-btn">Saqlash</button>
+      </form>
+      {% endif %}
+      <h2 style="margin-top: 32px;">Tariflar</h2>
+      <div class="tariflar-list columns">
+  {% for tarif in tariflar_json|reverse %}
+        <div class="tarif-card pro-card">
+          <div class="tarif-title">
+            🚕 <span>{{ tarif['name'] }}</span>
+          </div>
+          <div class="tarif-info">
+            <span>💸 <b>Chaqirish narxi:</b> <span class="price">{{ tarif['call_price'] }}</span></span>
+            <span>⏱️ <b>Daqiqa narxi:</b> <span class="price">{{ tarif['minute_price'] }}</span></span>
+            <span>📏 <b>Masofa narxi:</b> <span class="price">{{ tarif['distance_price'] }}</span></span>
+            <span>🧾 <b>QQS (%):</b> <span class="price">{{ tarif['vat'] }}</span></span>
+          </div>
+          {% if username == 'admin' %}
+          <a href="/edit_tarif/{{ tarif['id'] }}" class="btn tarif-edit-btn">✏️ Tahrirlash</a>
+          {% endif %}
+        </div>
+        {% endfor %}
+        {% if tariflar_json|length == 0 %}
+        <div class="no-tarif">Tariflar mavjud emas.</div>
+        {% endif %}
+      </div>
+    </div>
+  <div class="welcome-box" id="kirimchiqim-section" style="display:none; max-width:none; width:100%; margin:0; box-sizing:border-box;">
+      <h1>Kirim/Chiqim</h1>
+      <div class="cards-container" style="margin-bottom:32px;">
+        {% for org in tashkilotlar_json %}
+        <div class="org-card">
+          <div class="org-title">{{ org['name'] }}</div>
+          <div class="org-id">ID: {{ org['id'] }}</div>
+          <div class="org-balance">Balans: <span id="bal-{{ org['id'] }}">{{ '{:,.0f}'.format(org.get('balance', 0)).replace(',', ' ') }}</span> so‘m</div>
+        </div>
+        {% endfor %}
+        {% if tashkilotlar_json|length == 0 %}
+        <div class="empty">Tashkilotlar topilmadi.</div>
+        {% endif %}
+      </div>
+      {% if username == 'admin' %}
+      <div style="margin-bottom:18px; font-size:16px; color:#00b894;">Tashkilotni tanlang va balansni o'zgartiring</div>
+      <form method="POST" action="/update_balance" class="balance-form" style="margin-bottom:24px;">
+        <select name="org_id" required style="padding:7px 14px; border-radius:8px; font-size:15px; margin-right:8px;">
+          <option value="">Tashkilotni tanlang</option>
+          {% for org in tashkilotlar_json %}
+            <option value="{{ org['id'] }}">{{ org['name'] }}</option>
+          {% endfor %}
+        </select>
+        <input type="number" name="amount" placeholder="Summani kiriting" required class="bal-input">
+        <input type="text" name="comment" placeholder="Kommentariya" class="bal-comment" required>
+        <button type="submit" name="action" value="add" class="icon-btn" title="Hisobga qo'shish">
+          <i class="fa-solid fa-plus"></i> Hisobga qo'shish
+        </button>
+        <button type="submit" name="action" value="subtract" class="icon-btn" title="Hisobdan yechish">
+          <i class="fa-solid fa-minus"></i> Hisobdan yechish
+        </button>
+      </form>
+      {% endif %}
+      <div class="kirim-chiqim-table" style="margin-top:32px;">
+        <h2 style="margin-bottom:18px; color:#74b9ff; font-weight:800; font-size:24px; letter-spacing:1px;">Kirim/Chiqimlar ro'yxati</h2>
+        <table class="kc-table">
+          <thead>
+            <tr>
+              <th style="width:22%">Tashkilot</th>
+              <th style="width:14%">Amal</th>
+              <th style="width:18%">Miqdor</th>
+              <th style="width:30%">Kommentariya</th>
+              <th style="width:16%">Sana</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% if username == 'admin' %}
+              {% for org in tashkilotlar_json %}
+                {% for c in org.get('comments', [])|reverse %}
+                <tr>
+                  <td><i class="fa-solid fa-building" style="color:#00b894;margin-right:6px;"></i> <b>{{ org['name'] }}</b></td>
+                  <td>
+                    {% if c['action']=='add' %}
+                      <span class="kc-label kc-label-green"><i class="fa-solid fa-arrow-down"></i> Kirim</span>
+                    {% else %}
+                      <span class="kc-label kc-label-red"><i class="fa-solid fa-arrow-up"></i> Chiqim</span>
+                    {% endif %}
+                  </td>
+                  <td><span class="kc-badge">{{ '{:,.0f}'.format(c['amount']).replace(',', ' ') }} so‘m</span></td>
+                  <td>{{ c['comment'] }}</td>
+                  <td><span class="kc-date">{{ c['time']|datetime }}</span></td>
+                </tr>
+                {% endfor %}
+              {% endfor %}
+              {% for b in buyurtma_balansi %}
+              <tr>
+                <td><i class="fa-solid fa-building" style="color:#00b894;margin-right:6px;"></i> <b>{{ b['org_name'] }}</b></td>
+                <td><span class="kc-label kc-label-blue"><i class="fa-solid fa-receipt"></i> Buyurtma chiqimi</span></td>
+                <td><span class="kc-badge">{{ '{:,.0f}'.format(b['summa']).replace(',', ' ') }} so‘m</span></td>
+                <td>-</td>
+                <td><span class="kc-date">{{ b['vaqt']|uzb_datetime }}</span></td>
+              </tr>
+              {% endfor %}
+            {% else %}
+              {% for org in tashkilotlar_json %}
+                {% if org['id'] == user_org_id %}
+                  {% for c in org.get('comments', [])|reverse %}
+                  <tr>
+                    <td><i class="fa-solid fa-building" style="color:#00b894;margin-right:6px;"></i> <b>{{ org['name'] }}</b></td>
+                    <td>
+                      {% if c['action']=='add' %}
+                        <span class="kc-label kc-label-green"><i class="fa-solid fa-arrow-down"></i> Kirim</span>
+                      {% else %}
+                        <span class="kc-label kc-label-red"><i class="fa-solid fa-arrow-up"></i> Chiqim</span>
+                      {% endif %}
+                    </td>
+                    <td><span class="kc-badge">{{ '{:,.0f}'.format(c['amount']).replace(',', ' ') }} so‘m</span></td>
+                    <td>{{ c['comment'] }}</td>
+                    <td><span class="kc-date">{{ c['time']|datetime }}</span></td>
+                  </tr>
+                  {% endfor %}
+                {% endif %}
+              {% endfor %}
+              {% for b in buyurtma_balansi %}
+                {% if b['org_id'] == user_org_id or b['org_name'] == user_org_name %}
+                <tr>
+                  <td><i class="fa-solid fa-building" style="color:#00b894;margin-right:6px;"></i> <b>{{ b['org_name'] }}</b></td>
+                  <td><span class="kc-label kc-label-blue"><i class="fa-solid fa-receipt"></i> Buyurtma chiqimi</span></td>
+                  <td><span class="kc-badge">{{ '{:,.0f}'.format(b['summa']).replace(',', ' ') }} so‘m</span></td>
+                  <td>-</td>
+                  <td><span class="kc-date">{{ b['vaqt']|uzb_datetime }}</span></td>
+                </tr>
+                {% endif %}
+              {% endfor %}
+            {% endif %}
+          </tbody>
+        </table>
+        <style>
+          .kc-table {
+            width: 100%;
+            background: #222;
+            border-radius: 14px;
+            overflow: hidden;
+            color: #fff;
+            box-shadow: 0 2px 18px rgba(0,184,148,0.08);
+            border-collapse: separate;
+            border-spacing: 0;
+          }
+          .kc-table th {
+            background: #222;
+            color: #00b894;
+            font-weight: 700;
+            font-size: 16px;
+            border-bottom: 2px solid #00b894;
+            padding: 14px 8px;
+            text-align: left;
+          }
+          .kc-table td {
+            padding: 12px 8px;
+            font-size: 15px;
+            border-bottom: 1px solid #333;
+            vertical-align: middle;
+          }
+          .kc-table tr {
+            background: #232526;
+            transition: background 0.2s;
+          }
+          .kc-table tr:hover {
+            background: #2d3436;
+          }
+          .kc-label {
+            display: inline-block;
+            padding: 6px 16px 6px 10px;
+            border-radius: 8px;
+            font-weight: 700;
+            font-size: 15px;
+            color: #fff;
+            margin-right: 2px;
+            box-shadow: 0 1px 6px rgba(0,184,148,0.08);
+          }
+          .kc-label-green { background: linear-gradient(90deg,#00b894,#74b9ff); }
+          .kc-label-red { background: linear-gradient(90deg,#d63031,#fd7272); }
+          .kc-label-blue { background: linear-gradient(90deg,#0984e3,#74b9ff); }
+          .kc-badge {
+            background: #00b894;
+            color: #fff;
+            font-weight: 700;
+            border-radius: 8px;
+            padding: 6px 14px;
+            font-size: 16px;
+            box-shadow: 0 1px 6px rgba(0,184,148,0.08);
+          }
+          .kc-date {
+            font-size: 13px;
+            color: #b2bec3;
+            font-style: italic;
+          }
+        </style>
+      </div>
+    </div>
+  </div>
+  <script>
+    function showSection(section) {
+      const sections = [
+        'main-section', 'orgs-section', 'staff-section', 'orders-section', 'report-section', 'contact-section', 'profile-section', 'tariffs-section', 'kirimchiqim-section'
+      ];
+      sections.forEach(id => {
+        document.getElementById(id).style.display = (id === section + '-section') ? 'block' : 'none';
+      });
+    }
+    function showOrderSub(type) {
+      document.getElementById('yandex-orders').style.display = (type === 'yandex') ? 'block' : 'none';
+      document.getElementById('biznes-orders').style.display = (type === 'biznes') ? 'block' : 'none';
+    }
+    // Datetime filter for unix timestamp
+    function datetimeFilter(ts) {
+      var d = new Date(ts*1000);
+      return d.toLocaleString('uz-UZ');
+    }
+    document.querySelectorAll('.bal-hist-date').forEach(function(el){
+      var unix = el.textContent.replace(/[^0-9]/g, '');
+      if(unix) el.textContent = '('+datetimeFilter(unix)+')';
+    });
+  </script>
+</body>
+</html>

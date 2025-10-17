@@ -1,0 +1,26 @@
+[
+  {
+    "id": "cebc2eea-d088-4d94-b89d-3ae26f155f25",
+    "name": "captive_auto",
+    "call_price": "10000",
+    "minute_price": "1000",
+    "distance_price": "3",
+    "vat": "12"
+  },
+  {
+    "id": "c4b9bf6e-1f55-4714-9edf-0ed096f711f0",
+    "name": "captive_auto2",
+    "call_price": "20000",
+    "minute_price": "1500",
+    "distance_price": "5",
+    "vat": "12"
+  },
+  {
+    "id": "f72ed6d7-34c5-4344-940d-e8ec0f43dd85",
+    "name": "captive_auto3",
+    "call_price": "30000",
+    "minute_price": "2000",
+    "distance_price": "7",
+    "vat": "12"
+  }
+]

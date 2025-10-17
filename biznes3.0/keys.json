@@ -1,0 +1,28 @@
+{
+  "users": [
+    {
+      "username": "admin",
+      "password": "sukhrobjon5051525",
+      "phone": "+998335051525"
+    },
+    {
+      "username": "shamshir8844",
+      "password": "shamshir977171744",
+      "phone": "+998977171744"
+    },
+    {
+      "username": "duslar9203",
+      "password": "duslar913149203",
+      "phone": "+998335051525",
+      "org_id": "56f94c4c7cbf41799fe40c2a055113bb",
+      "org_name": "DO`STLAR TAXI MCHJ"
+    },
+    {
+      "username": "drive70",
+      "password": "drive5047694",
+      "phone": "+998335051525",
+      "org_id": "c31e4c565a4c418987ad7a94a9f927d9",
+      "org_name": "DRIVE TAXI 777 MCHJ"
+    }
+  ]
+}

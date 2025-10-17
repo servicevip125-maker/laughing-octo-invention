@@ -1,0 +1,541 @@
+{
+  "items": [
+    {
+      "fullname": "SHAMSHER",
+      "is_active": true,
+      "phone": "+998977171744",
+      "id": "ae1d46a93e7148d388999f3147094259",
+      "is_deleted": false,
+      "cost_centers_id": "42c942c210ee49da8f8f3c89a742ca5d",
+      "department_id": "ee3983a76efd4b92bc27d22b68e612d2",
+      "limits": [
+        {
+          "limit_id": "a1ec0dc0352c4495a4d2d275e50416b0",
+          "service": "taxi"
+        }
+      ],
+      "nickname": "",
+      "client_id": "86bc3f29eff64302bf53c26a15fe4909"
+    },
+    {
+      "fullname": "",
+      "is_active": false,
+      "phone": "+998945013311",
+      "id": "7d98ab04ab68467d8aeb9b00aaf2490b",
+      "is_deleted": true,
+      "cost_centers_id": "42c942c210ee49da8f8f3c89a742ca5d",
+      "limits": [
+        {
+          "limit_id": "af722e0e7d534d53b8acce86d2563012",
+          "service": "taxi"
+        }
+      ],
+      "nickname": "",
+      "client_id": "86bc3f29eff64302bf53c26a15fe4909"
+    },
+    {
+      "fullname": "Sohib Qo’chqorov",
+      "is_active": false,
+      "phone": "+998333148778",
+      "id": "f3e237b22bc04e39ac5416c27422d19e",
+      "is_deleted": true,
+      "cost_centers_id": "42c942c210ee49da8f8f3c89a742ca5d",
+      "department_id": "c31e4c565a4c418987ad7a94a9f927d9",
+      "limits": [],
+      "nickname": "",
+      "client_id": "86bc3f29eff64302bf53c26a15fe4909"
+    },
+    {
+      "fullname": "SUHROB ISLOMOV",
+      "is_active": true,
+      "phone": "+998335051525",
+      "id": "b975b3d378444cf7be38fa3c71d280d1",
+      "is_deleted": false,
+      "cost_center": "",
+      "cost_centers_id": "42c942c210ee49da8f8f3c89a742ca5d",
+      "department_id": "ee3983a76efd4b92bc27d22b68e612d2",
+      "email": "islam.payments@gmail.com",
+      "limits": [
+        {
+          "limit_id": "baae809e64f94f1b987bfd5a9189fd1d",
+          "service": "taxi"
+        }
+      ],
+      "nickname": "",
+      "client_id": "86bc3f29eff64302bf53c26a15fe4909"
+    },
+    {
+      "fullname": "Parviz",
+      "is_active": false,
+      "phone": "+998974246622",
+      "id": "e606ceefe0694739bc73adbb0b81266c",
+      "is_deleted": true,
+      "cost_centers_id": "42c942c210ee49da8f8f3c89a742ca5d",
+      "department_id": "c31e4c565a4c418987ad7a94a9f927d9",
+      "limits": [],
+      "nickname": "",
+      "client_id": "86bc3f29eff64302bf53c26a15fe4909"
+    },
+    {
+      "fullname": "MIRZOHID",
+      "is_active": true,
+      "phone": "+998970001744",
+      "id": "1f441d85410b49fe9ffa2b7354a38ac0",
+      "is_deleted": false,
+      "cost_centers_id": "42c942c210ee49da8f8f3c89a742ca5d",
+      "department_id": "c31e4c565a4c418987ad7a94a9f927d9",
+      "limits": [
+        {
+          "limit_id": "a1ec0dc0352c4495a4d2d275e50416b0",
+          "service": "taxi"
+        }
+      ],
+      "nickname": "",
+      "client_id": "86bc3f29eff64302bf53c26a15fe4909"
+    },
+    {
+      "fullname": "Durdona",
+      "is_active": true,
+      "phone": "+998900743105",
+      "id": "6c74aa3741714af2be35445b824c4d44",
+      "is_deleted": false,
+      "cost_centers_id": "42c942c210ee49da8f8f3c89a742ca5d",
+      "department_id": "c31e4c565a4c418987ad7a94a9f927d9",
+      "limits": [
+        {
+          "limit_id": "a1ec0dc0352c4495a4d2d275e50416b0",
+          "service": "taxi"
+        }
+      ],
+      "nickname": "",
+      "client_id": "86bc3f29eff64302bf53c26a15fe4909"
+    },
+    {
+      "fullname": "OTABEK",
+      "is_active": true,
+      "phone": "+998995047694",
+      "id": "60d59161da334cedbadf11393e02d2a5",
+      "is_deleted": false,
+      "cost_center": "",
+      "cost_centers_id": "42c942c210ee49da8f8f3c89a742ca5d",
+      "department_id": "c31e4c565a4c418987ad7a94a9f927d9",
+      "limits": [
+        {
+          "limit_id": "a1ec0dc0352c4495a4d2d275e50416b0",
+          "service": "taxi"
+        }
+      ],
+      "nickname": "",
+      "client_id": "86bc3f29eff64302bf53c26a15fe4909"
+    },
+    {
+      "fullname": "JAVLON",
+      "is_active": false,
+      "phone": "+998339690006",
+      "id": "b4b3f5985c53435c9262c796fe23de29",
+      "is_deleted": true,
+      "cost_centers_id": "42c942c210ee49da8f8f3c89a742ca5d",
+      "department_id": "c31e4c565a4c418987ad7a94a9f927d9",
+      "limits": [],
+      "nickname": "",
+      "client_id": "86bc3f29eff64302bf53c26a15fe4909"
+    },
+    {
+      "fullname": "KUVONCHBEK",
+      "is_active": false,
+      "phone": "+998919564407",
+      "id": "6a203386e4b34f1a85fd831d6c252a03",
+      "is_deleted": true,
+      "cost_centers_id": "42c942c210ee49da8f8f3c89a742ca5d",
+      "department_id": "c31e4c565a4c418987ad7a94a9f927d9",
+      "limits": [],
+      "nickname": "",
+      "client_id": "86bc3f29eff64302bf53c26a15fe4909"
+    },
+    {
+      "fullname": "ASAD",
+      "is_active": false,
+      "phone": "+998949245478",
+      "id": "8f86aafdea5e4d4fb3a9ef839b26f178",
+      "is_deleted": true,
+      "cost_centers_id": "42c942c210ee49da8f8f3c89a742ca5d",
+      "department_id": "c31e4c565a4c418987ad7a94a9f927d9",
+      "limits": [],
+      "nickname": "",
+      "client_id": "86bc3f29eff64302bf53c26a15fe4909"
+    },
+    {
+      "fullname": "TO`LQIN",
+      "is_active": false,
+      "phone": "+998772659903",
+      "id": "373e386350aa4580a571d9eb594e4fca",
+      "is_deleted": true,
+      "cost_centers_id": "42c942c210ee49da8f8f3c89a742ca5d",
+      "department_id": "c31e4c565a4c418987ad7a94a9f927d9",
+      "limits": [],
+      "nickname": "",
+      "client_id": "86bc3f29eff64302bf53c26a15fe4909"
+    },
+    {
+      "fullname": "SEVARA",
+      "is_active": true,
+      "phone": "+998885591009",
+      "id": "4fae0cc2121c4f058b41793e511c2821",
+      "is_deleted": false,
+      "cost_centers_id": "42c942c210ee49da8f8f3c89a742ca5d",
+      "department_id": "c31e4c565a4c418987ad7a94a9f927d9",
+      "limits": [
+        {
+          "limit_id": "a1ec0dc0352c4495a4d2d275e50416b0",
+          "service": "taxi"
+        }
+      ],
+      "nickname": "",
+      "client_id": "86bc3f29eff64302bf53c26a15fe4909"
+    },
+    {
+      "fullname": "BAXA ",
+      "is_active": true,
+      "phone": "+998999336622",
+      "id": "3580132b7ef54c0eaa3bd8050f019716",
+      "is_deleted": false,
+      "cost_center": "",
+      "cost_centers_id": "42c942c210ee49da8f8f3c89a742ca5d",
+      "department_id": "c31e4c565a4c418987ad7a94a9f927d9",
+      "limits": [
+        {
+          "limit_id": "a1ec0dc0352c4495a4d2d275e50416b0",
+          "service": "taxi"
+        }
+      ],
+      "nickname": "",
+      "client_id": "86bc3f29eff64302bf53c26a15fe4909"
+    },
+    {
+      "fullname": "ADILBEK",
+      "is_active": false,
+      "phone": "+998934550805",
+      "id": "c9c8923892cd49c98fa1c7c1ddc94322",
+      "is_deleted": true,
+      "cost_centers_id": "42c942c210ee49da8f8f3c89a742ca5d",
+      "department_id": "c31e4c565a4c418987ad7a94a9f927d9",
+      "limits": [],
+      "nickname": "",
+      "client_id": "86bc3f29eff64302bf53c26a15fe4909"
+    },
+    {
+      "fullname": "VORIS",
+      "is_active": false,
+      "phone": "+998940044433",
+      "id": "be1c9c78024b4bd5807d54b744aa6372",
+      "is_deleted": true,
+      "cost_centers_id": "42c942c210ee49da8f8f3c89a742ca5d",
+      "department_id": "c31e4c565a4c418987ad7a94a9f927d9",
+      "limits": [],
+      "nickname": "",
+      "client_id": "86bc3f29eff64302bf53c26a15fe4909"
+    },
+    {
+      "fullname": "Fayruz",
+      "is_active": true,
+      "phone": "+998913149203",
+      "id": "573962fb404f413b9f228fe2c19124fb",
+      "is_deleted": false,
+      "cost_center": "",
+      "cost_centers_id": "42c942c210ee49da8f8f3c89a742ca5d",
+      "department_id": "56f94c4c7cbf41799fe40c2a055113bb",
+      "limits": [
+        {
+          "limit_id": "a1ec0dc0352c4495a4d2d275e50416b0",
+          "service": "taxi"
+        }
+      ],
+      "nickname": "",
+      "client_id": "86bc3f29eff64302bf53c26a15fe4909"
+    },
+    {
+      "fullname": "BEXRUZ",
+      "is_active": true,
+      "phone": "+998880003274",
+      "id": "a7870e9c3dfb48a5872ded330fced9c2",
+      "is_deleted": false,
+      "cost_centers_id": "42c942c210ee49da8f8f3c89a742ca5d",
+      "department_id": "c31e4c565a4c418987ad7a94a9f927d9",
+      "limits": [
+        {
+          "limit_id": "a1ec0dc0352c4495a4d2d275e50416b0",
+          "service": "taxi"
+        }
+      ],
+      "nickname": "",
+      "client_id": "86bc3f29eff64302bf53c26a15fe4909"
+    },
+    {
+      "fullname": "ERKIN",
+      "is_active": false,
+      "phone": "+998330100233",
+      "id": "8e948f02d1b349dc9a5872b5483de313",
+      "is_deleted": true,
+      "cost_centers_id": "42c942c210ee49da8f8f3c89a742ca5d",
+      "department_id": "c31e4c565a4c418987ad7a94a9f927d9",
+      "limits": [],
+      "nickname": "",
+      "client_id": "86bc3f29eff64302bf53c26a15fe4909"
+    },
+    {
+      "fullname": "TIMUR",
+      "is_active": true,
+      "phone": "+998901136626",
+      "id": "105f11741af647c3a80e54ec3dd9292e",
+      "is_deleted": false,
+      "cost_centers_id": "42c942c210ee49da8f8f3c89a742ca5d",
+      "department_id": "c31e4c565a4c418987ad7a94a9f927d9",
+      "limits": [
+        {
+          "limit_id": "a1ec0dc0352c4495a4d2d275e50416b0",
+          "service": "taxi"
+        }
+      ],
+      "nickname": "",
+      "client_id": "86bc3f29eff64302bf53c26a15fe4909"
+    },
+    {
+      "fullname": "OYBEK",
+      "is_active": true,
+      "phone": "+998998887868",
+      "id": "7519060c325f4e4c85a5646c7fd0011e",
+      "is_deleted": false,
+      "cost_centers_id": "42c942c210ee49da8f8f3c89a742ca5d",
+      "department_id": "c31e4c565a4c418987ad7a94a9f927d9",
+      "limits": [
+        {
+          "limit_id": "a1ec0dc0352c4495a4d2d275e50416b0",
+          "service": "taxi"
+        }
+      ],
+      "nickname": "",
+      "client_id": "86bc3f29eff64302bf53c26a15fe4909"
+    },
+    {
+      "fullname": "KAZBEK",
+      "is_active": true,
+      "phone": "+998913791006",
+      "id": "01b9b0cc5bbc4b1189d77d333101b547",
+      "is_deleted": false,
+      "cost_center": "",
+      "cost_centers_id": "42c942c210ee49da8f8f3c89a742ca5d",
+      "department_id": "c31e4c565a4c418987ad7a94a9f927d9",
+      "limits": [
+        {
+          "limit_id": "baae809e64f94f1b987bfd5a9189fd1d",
+          "service": "taxi"
+        }
+      ],
+      "nickname": "",
+      "client_id": "86bc3f29eff64302bf53c26a15fe4909"
+    },
+    {
+      "fullname": "MALIKA",
+      "is_active": true,
+      "phone": "+998908292952",
+      "id": "236080263db64ac7bc87be039cdd672e",
+      "is_deleted": false,
+      "cost_centers_id": "42c942c210ee49da8f8f3c89a742ca5d",
+      "department_id": "c31e4c565a4c418987ad7a94a9f927d9",
+      "limits": [
+        {
+          "limit_id": "a1ec0dc0352c4495a4d2d275e50416b0",
+          "service": "taxi"
+        }
+      ],
+      "nickname": "",
+      "client_id": "86bc3f29eff64302bf53c26a15fe4909"
+    },
+    {
+      "fullname": "ABDUMAJID",
+      "is_active": false,
+      "phone": "+998971190901",
+      "id": "5f42c5816a6a4e578d89efe180ca853a",
+      "is_deleted": true,
+      "cost_centers_id": "42c942c210ee49da8f8f3c89a742ca5d",
+      "department_id": "c31e4c565a4c418987ad7a94a9f927d9",
+      "limits": [],
+      "nickname": "",
+      "client_id": "86bc3f29eff64302bf53c26a15fe4909"
+    },
+    {
+      "fullname": "ZULFIYA",
+      "is_active": true,
+      "phone": "+998973332959",
+      "id": "4823005856ff4fdeaa80f6b4c9676e37",
+      "is_deleted": false,
+      "cost_centers_id": "42c942c210ee49da8f8f3c89a742ca5d",
+      "department_id": "c31e4c565a4c418987ad7a94a9f927d9",
+      "limits": [
+        {
+          "limit_id": "a1ec0dc0352c4495a4d2d275e50416b0",
+          "service": "taxi"
+        }
+      ],
+      "nickname": "",
+      "client_id": "86bc3f29eff64302bf53c26a15fe4909"
+    },
+    {
+      "fullname": "DILBAR ",
+      "is_active": false,
+      "phone": "+998998894610",
+      "id": "76722b20b2724714b8eb2b0a075a2624",
+      "is_deleted": true,
+      "cost_centers_id": "42c942c210ee49da8f8f3c89a742ca5d",
+      "department_id": "c31e4c565a4c418987ad7a94a9f927d9",
+      "limits": [],
+      "nickname": "",
+      "client_id": "86bc3f29eff64302bf53c26a15fe4909"
+    },
+    {
+      "fullname": "KAMOL MAHMUDJON",
+      "is_active": false,
+      "phone": "+998991700941",
+      "id": "2372935c091445fb984b34f6d4a437fb",
+      "is_deleted": true,
+      "cost_centers_id": "42c942c210ee49da8f8f3c89a742ca5d",
+      "department_id": "c31e4c565a4c418987ad7a94a9f927d9",
+      "limits": [],
+      "nickname": "",
+      "client_id": "86bc3f29eff64302bf53c26a15fe4909"
+    },
+    {
+      "fullname": "Ulug`bek",
+      "is_active": false,
+      "phone": "+998972659888",
+      "id": "1888ced6fa0c49cdb67b9802dc8abd54",
+      "is_deleted": true,
+      "cost_centers_id": "42c942c210ee49da8f8f3c89a742ca5d",
+      "department_id": "c31e4c565a4c418987ad7a94a9f927d9",
+      "limits": [],
+      "nickname": "",
+      "client_id": "86bc3f29eff64302bf53c26a15fe4909"
+    },
+    {
+      "fullname": "NIKITA",
+      "is_active": true,
+      "phone": "+998952564020",
+      "id": "49c64b2e18d84011b90e1376b662bee3",
+      "is_deleted": false,
+      "cost_centers_id": "42c942c210ee49da8f8f3c89a742ca5d",
+      "department_id": "c31e4c565a4c418987ad7a94a9f927d9",
+      "limits": [
+        {
+          "limit_id": "a1ec0dc0352c4495a4d2d275e50416b0",
+          "service": "taxi"
+        }
+      ],
+      "nickname": "",
+      "client_id": "86bc3f29eff64302bf53c26a15fe4909"
+    },
+    {
+      "fullname": "AKBAR",
+      "is_active": false,
+      "phone": "+998903558101",
+      "id": "fb422eaf53db4065b317ac44cd7afd94",
+      "is_deleted": true,
+      "cost_centers_id": "42c942c210ee49da8f8f3c89a742ca5d",
+      "department_id": "c31e4c565a4c418987ad7a94a9f927d9",
+      "limits": [],
+      "nickname": "",
+      "client_id": "86bc3f29eff64302bf53c26a15fe4909"
+    },
+    {
+      "fullname": "Sevinch singlim",
+      "is_active": true,
+      "phone": "+998974549474",
+      "id": "4d89119e49114b8da9cc166f6c299eb6",
+      "is_deleted": false,
+      "cost_centers_id": "42c942c210ee49da8f8f3c89a742ca5d",
+      "department_id": "c31e4c565a4c418987ad7a94a9f927d9",
+      "limits": [
+        {
+          "limit_id": "a1ec0dc0352c4495a4d2d275e50416b0",
+          "service": "taxi"
+        }
+      ],
+      "nickname": "",
+      "client_id": "86bc3f29eff64302bf53c26a15fe4909"
+    },
+    {
+      "fullname": "Nasirov Baxtiyor",
+      "is_active": true,
+      "phone": "+998900991520",
+      "id": "da05a8302625463d88c69b9593dd8958",
+      "is_deleted": false,
+      "cost_center": "",
+      "cost_centers_id": "42c942c210ee49da8f8f3c89a742ca5d",
+      "department_id": "a3c24f2961034fc186a97ba226171c04",
+      "limits": [
+        {
+          "limit_id": "a1ec0dc0352c4495a4d2d275e50416b0",
+          "service": "taxi"
+        }
+      ],
+      "nickname": "",
+      "client_id": "86bc3f29eff64302bf53c26a15fe4909"
+    },
+    {
+      "fullname": "Idiev Ilxom",
+      "is_active": true,
+      "phone": "+998909903929",
+      "id": "fb8acd33714b4621850684f46cba14be",
+      "is_deleted": false,
+      "cost_center": "",
+      "cost_centers_id": "42c942c210ee49da8f8f3c89a742ca5d",
+      "department_id": "a3c24f2961034fc186a97ba226171c04",
+      "limits": [
+        {
+          "limit_id": "a1ec0dc0352c4495a4d2d275e50416b0",
+          "service": "taxi"
+        }
+      ],
+      "nickname": "",
+      "client_id": "86bc3f29eff64302bf53c26a15fe4909"
+    },
+    {
+      "fullname": "Alisher Bozorov",
+      "is_active": true,
+      "phone": "+998935078382",
+      "id": "83a17672ae9547d68ba6651b55feedfc",
+      "is_deleted": false,
+      "cost_center": "",
+      "cost_centers_id": "42c942c210ee49da8f8f3c89a742ca5d",
+      "department_id": "a3c24f2961034fc186a97ba226171c04",
+      "limits": [
+        {
+          "limit_id": "a1ec0dc0352c4495a4d2d275e50416b0",
+          "service": "taxi"
+        }
+      ],
+      "nickname": "",
+      "client_id": "86bc3f29eff64302bf53c26a15fe4909"
+    },
+    {
+      "fullname": "Rustam Zakirov",
+      "is_active": true,
+      "phone": "+998909822311",
+      "id": "e999bde68a4c490591827d5a5e8c41ea",
+      "is_deleted": false,
+      "cost_center": "",
+      "cost_centers_id": "42c942c210ee49da8f8f3c89a742ca5d",
+      "department_id": "a3c24f2961034fc186a97ba226171c04",
+      "limits": [
+        {
+          "limit_id": "a1ec0dc0352c4495a4d2d275e50416b0",
+          "service": "taxi"
+        }
+      ],
+      "nickname": "",
+      "client_id": "86bc3f29eff64302bf53c26a15fe4909"
+    }
+  ],
+  "limit": 100,
+  "total_amount": 35,
+  "next_cursor": "djEgMTc2MDUzNjY0NS4zMTIgZTk5OWJkZTY4YTRjNDkwNTkxODI3ZDVhNWU4YzQxZWE="
+}

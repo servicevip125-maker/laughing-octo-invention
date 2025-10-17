@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <title>Yandex buyurtmalar</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background: linear-gradient(135deg, #232526 0%, #414345 100%);
+            color: #fff;
+            font-family: 'Poppins', sans-serif;
+        }
+        .container {
+            max-width: 1100px;
+            margin: 40px auto;
+            background: rgba(255,255,255,0.07);
+            border-radius: 18px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+            padding: 32px 28px;
+        }
+        h2 {
+            font-size: 2.1rem;
+            font-weight: 800;
+            color: #00b894;
+            margin-bottom: 18px;
+            letter-spacing: 1px;
+        }
+        #refresh-yandex {
+            background: linear-gradient(90deg, #00b894, #74b9ff);
+            color: #fff;
+            font-weight: 600;
+            border-radius: 8px;
+            border: none;
+            padding: 9px 28px;
+            margin-bottom: 18px;
+            box-shadow: 0 2px 12px #00b89444;
+            transition: background 0.2s, transform 0.2s;
+        }
+        #refresh-yandex:hover {
+            background: linear-gradient(90deg, #74b9ff, #00b894);
+            transform: scale(1.07);
+        }
+        #update-status {
+            font-size: 1.1rem;
+            color: #00b894;
+            margin-bottom: 12px;
+        }
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 24px;
+        }
+        .order-card {
+            background: rgba(255,255,255,0.09);
+            border-radius: 14px;
+            box-shadow: 0 2px 16px #74b9ff22;
+            padding: 22px 18px 16px 18px;
+            color: #fff;
+            position: relative;
+            transition: box-shadow 0.2s, transform 0.2s;
+            cursor: pointer;
+        }
+        .order-card:hover {
+            box-shadow: 0 6px 24px #00b89444;
+            transform: translateY(-4px) scale(1.03);
+        }
+        .order-id {
+            font-size: 0.95rem;
+            color: #b2bec3;
+            word-break: break-all;
+        }
+        .order-status {
+            font-size: 1.05rem;
+            font-weight: 700;
+            color: #00b894;
+            margin-bottom: 6px;
+        }
+        .order-info {
+            font-size: 1.08rem;
+            margin-bottom: 8px;
+        }
+        .order-label {
+            font-weight: 600;
+            color: #74b9ff;
+            margin-right: 4px;
+        }
+        .order-date {
+            font-size: 1.02rem;
+            color: #ffeaa7;
+            margin-bottom: 4px;
+        }
+        .order-class {
+            font-size: 1.02rem;
+            color: #fdcb6e;
+            margin-bottom: 4px;
+        }
+        .order-summa {
+            font-size: 1.08rem;
+            color: #00b894;
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+        .empty-row {
+            text-align: center;
+            color: #b2bec3;
+            font-size: 1.1rem;
+            padding: 24px;
+        }
+        /* Modal styles */
+        .modal-bg {
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(0,0,0,0.55);
+            z-index: 9999;
+            display: none;
+        }
+        .modal-center {
+            position: fixed;
+            top: 50%; left: 50%;
+            transform: translate(-50%, -50%);
+            background: #222;
+            color: #fff;
+            border-radius: 16px;
+            box-shadow: 0 8px 32px #00b89444;
+            min-width: 340px;
+            max-width: 600px;
+            padding: 32px 24px 18px 24px;
+            z-index: 10000;
+        }
+        .modal-title {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: #00b894;
+            margin-bottom: 12px;
+        }
+        .modal-close {
+            position: absolute;
+            top: 18px; right: 18px;
+            background: #fff;
+            color: #222;
+            border: none;
+            border-radius: 50%;
+            width: 32px; height: 32px;
+            font-size: 1.3rem;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .modal-body {
+            max-height: 350px;
+            overflow-y: auto;
+        }
+        .modal-body .json-key {
+            color: #00b894;
+            font-weight: 600;
+        }
+        .modal-body .json-value {
+            color: #fff;
+        }
+        .modal-body .json-row {
+            margin-bottom: 8px;
+            font-size: 1.02rem;
+            word-break: break-all;
+        }
+        @media (max-width: 700px) {
+            .container { padding: 12px 2px; }
+            .modal-center { min-width: 90vw; max-width: 98vw; padding: 18px 6px; }
+            .cards { grid-template-columns: 1fr; gap: 12px; }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h2>Yandex buyurtmalar</h2>
+    <button id="refresh-yandex">Yangilash</button>
+    <button onclick="refreshAll('yandex')" id="refresh-yandex">Yangilash</button>
+    <div id="update-status"></div>
+    <div class="cards">
+    {% for order in orders %}
+        <div class="order-card" onclick="showOrderDetails(JSON.parse(this.getAttribute('data-order')))" data-order='{{ order | tojson | safe }}'>
+            <div class="order-status">{{ order.status|capitalize }}</div>
+            <div class="order-id"><span class="order-label">ID:</span> {{ order.id }}</div>
+            <div class="order-info"><span class="order-label">Ism:</span> {{ order.driver_profile.name if order.driver_profile is defined and order.driver_profile.name is defined else '-' }}</div>
+            <div class="order-info"><span class="order-label">Avto raqam:</span> {{ order.car.license.number if order.car is defined and order.car.license is defined and order.car.license.number is defined else '-' }}</div>
+            <div class="order-info"><span class="order-label">Tarif:</span> {{ order.category if order.category is defined else '-' }}</div>
+            <div class="order-info"><span class="order-label">Moshina:</span> {{ order.car.brand_model if order.car is defined and order.car.brand_model is defined else '-' }}</div>
+            <div class="order-date"><span class="order-label">Sana:</span> {{ order.created_at | uzb_datetime }}</div>
+        </div>
+    {% else %}
+        <div class="empty-row">Buyurtmalar topilmadi.</div>
+    {% endfor %}
+    </div>
+</div>
+<div id="modal-bg" class="modal-bg"></div>
+<div id="order-modal" class="modal-center" style="display:none;">
+    <button class="modal-close" onclick="closeModal()">&times;</button>
+    <div class="modal-title">Buyurtma haqida batafsil</div>
+    <div class="modal-body" id="modal-body"></div>
+</div>
+<script>
+    function refreshAll(type) {
+        let url = '';
+        let statusId = 'update-status';
+        if(type === 'yandex') {
+            url = '/update_yandex_orders';
+            statusId = 'update-status';
+        } else if(type === 'biznes') {
+            url = '/update_biznes_orders';
+            statusId = 'update-status';
+        } else {
+            url = '/update_biznes_orders';
+            statusId = 'update-status';
+        }
+        document.getElementById(statusId).textContent = 'Yangilanmoqda...';
+        fetch(url, {method:'POST'})
+            .then(r => r.json())
+            .then(data => {
+                if(data.success){
+                    document.getElementById(statusId).textContent = 'Yangilandi!';
+                    setTimeout(function(){ location.reload(); }, 1000);
+                }else{
+                    document.getElementById(statusId).textContent = 'Yangilashda xatolik!';
+                }
+            })
+            .catch(() => {
+                document.getElementById(statusId).textContent = 'Serverga ulanishda xatolik!';
+            });
+    }
+    function showOrderDetails(order) {
+        document.getElementById('modal-bg').style.display = 'block';
+        document.getElementById('order-modal').style.display = 'block';
+        // Chiroyli va tartibli tafsilotlar
+        var html = '<div style="margin-bottom:12px;font-size:1.12rem;font-weight:600;color:#00b894;">Buyurtma tafsilotlari</div>';
+        html += '<div class="json-row"><span class="json-key">Status:</span> <span class="json-value">'+(order.status?order.status:'-')+'</span></div>';
+        html += '<div class="json-row"><span class="json-key">ID:</span> <span class="json-value">'+(order.id?order.id:'-')+'</span></div>';
+        html += '<div class="json-row"><span class="json-key">Ism:</span> <span class="json-value">'+(order.driver_profile&&order.driver_profile.name?order.driver_profile.name:'-')+'</span></div>';
+        html += '<div class="json-row"><span class="json-key">Avto raqam:</span> <span class="json-value">'+(order.car&&order.car.license&&order.car.license.number?order.car.license.number:'-')+'</span></div>';
+        html += '<div class="json-row"><span class="json-key">Moshina:</span> <span class="json-value">'+(order.car&&order.car.brand_model?order.car.brand_model:'-')+'</span></div>';
+        html += '<div class="json-row"><span class="json-key">Tarif:</span> <span class="json-value">'+(order.category?order.category:'-')+'</span></div>';
+        html += '<div class="json-row"><span class="json-key">Sana:</span> <span class="json-value">'+(order.created_at?order.created_at:'-')+'</span></div>';
+        if(order.address_from && order.address_from.address){
+            html += '<div class="json-row"><span class="json-key">Manzil (qayerdan):</span> <span class="json-value">'+order.address_from.address+'</span></div>';
+        }
+        if(order.route_points && order.route_points.length>0 && order.route_points[0].address){
+            html += '<div class="json-row"><span class="json-key">Manzil (qayerga):</span> <span class="json-value">'+order.route_points[0].address+'</span></div>';
+        }
+        if(order.payment_method){
+            html += '<div class="json-row"><span class="json-key">To\'lov turi:</span> <span class="json-value">'+order.payment_method+'</span></div>';
+        }
+        if(order.type && order.type.name){
+            html += '<div class="json-row"><span class="json-key">Buyurtma turi:</span> <span class="json-value">'+order.type.name+'</span></div>';
+        }
+        // Events (statuslar tarixi)
+        if(order.events && order.events.length>0){
+            html += '<div style="margin-top:10px;font-weight:600;color:#74b9ff;">Statuslar tarixi:</div>';
+            for(var i=0;i<order.events.length;i++){
+                var ev = order.events[i];
+                html += '<div class="json-row" style="margin-left:12px;"><span class="json-key">'+(ev.event_at?ev.event_at:'')+'</span> <span class="json-value">'+(ev.order_status?ev.order_status:'')+'</span></div>';
+            }
+        }
+        // Barcha qolgan maydonlar (key-value)
+        html += '<div style="margin-top:10px;font-weight:600;color:#b2bec3;">Barcha maʼlumotlar:</div>';
+        for (var key in order) {
+            if(["status","id","driver_profile","car","category","created_at","address_from","route_points","events","payment_method","type"].indexOf(key)===-1){
+                html += '<div class="json-row"><span class="json-key">'+key+': </span>' + '<span class="json-value">'+(typeof order[key]==='object'?JSON.stringify(order[key]):order[key])+'</span></div>';
+            }
+        }
+        document.getElementById('modal-body').innerHTML = html;
+    }
+    function closeModal() {
+        document.getElementById('modal-bg').style.display = 'none';
+        document.getElementById('order-modal').style.display = 'none';
+    }
+    document.getElementById('modal-bg').onclick = closeModal;
+</script>
+</body>
+</html>

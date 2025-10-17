@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <title>Profilni tahrirlash</title>
+  <style>
+    body {
+      background: linear-gradient(145deg, #000, #111);
+      color: white;
+      font-family: "Poppins", sans-serif;
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .edit-box {
+      background: rgba(255,255,255,0.06);
+      border-radius: 18px;
+      padding: 38px 32px;
+      box-shadow: 0 0 40px rgba(0,184,148,0.12);
+      width: 100%;
+      max-width: 420px;
+      text-align: center;
+    }
+    .edit-box h2 {
+      font-size: 22px;
+      font-weight: 700;
+      margin-bottom: 18px;
+      color: #00b894;
+    }
+    .edit-form {
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+      align-items: stretch;
+    }
+    .edit-form input {
+      padding: 10px 14px;
+      border-radius: 7px;
+      border: none;
+      background: rgba(255,255,255,0.13);
+      color: #fff;
+      font-size: 16px;
+      outline: none;
+    }
+    .edit-form button {
+      background: linear-gradient(90deg, #00b894, #74b9ff);
+      color: #fff;
+      border: none;
+      padding: 10px 0;
+      border-radius: 7px;
+      font-weight: 700;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.2s, transform 0.2s;
+    }
+    .edit-form button:hover {
+      background: linear-gradient(90deg, #74b9ff, #00b894);
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <div class="edit-box">
+    <h2>Profil maʼlumotlarini tahrirlash</h2>
+    <form method="POST" class="edit-form">
+      <input type="text" name="login" value="{{ user['username'] }}" placeholder="Login" required>
+      <input type="text" name="password" value="{{ user['password'] }}" placeholder="Parol" required>
+      <input type="text" name="phone" value="{{ user['phone'] }}" placeholder="Telefon" required>
+      <button type="submit">Saqlash</button>
+    </form>
+    <br>
+    <a href="/">Ortga qaytish</a>
+  </div>
+</body>
+</html>

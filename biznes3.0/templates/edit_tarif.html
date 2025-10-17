@@ -1,0 +1,23 @@
+
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <title>Tarifni tahrirlash</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Tarifni tahrirlash</h1>
+        <form method="POST">
+            <div><label>Tarif nomi:</label><input type="text" name="name" value="{{ tarif['name'] }}" required></div>
+            <div><label>Chaqirish narxi:</label><input type="number" name="call_price" value="{{ tarif['call_price'] }}" required></div>
+            <div><label>Daqiqa narxi:</label><input type="number" name="minute_price" value="{{ tarif['minute_price'] }}" required></div>
+            <div><label>Masofa (m) narxi:</label><input type="number" name="distance_price" value="{{ tarif['distance_price'] }}" required></div>
+            <div><label>QQS (%):</label><input type="number" name="vat" value="{{ tarif['vat'] }}" required></div>
+            <button type="submit" class="btn">Saqlash</button>
+            <a href="/" class="btn">Bekor qilish</a>
+        </form>
+    </div>
+</body>
+</html>

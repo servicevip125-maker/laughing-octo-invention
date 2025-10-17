@@ -1,0 +1,1761 @@
+{
+  "orders": [
+    {
+      "id": "62cccc0b4c70c22db1c57b6987bebaf6",
+      "title": "Toshkent, Muqimiy koʻchasi, 19A",
+      "amount": 0.0,
+      "staff_name": "Nasirov Baxtiyor",
+      "org_name": "MULTICARD",
+      "status": "Bajarilgan",
+      "details": "Manzil: Toshkent, Feruza koʻchasi, 1 | Sana: 2025-10-15T21:45:16+03:00 | Klass: captive_auto2",
+      "info": {
+        "id": "62cccc0b4c70c22db1c57b6987bebaf6",
+        "user_id": "da05a8302625463d88c69b9593dd8958",
+        "class": "captive_auto2",
+        "status": "complete",
+        "due_date": "2025-10-15T21:45:16+03:00",
+        "finished_date": "2025-10-15T22:08:24.939000+03:00",
+        "performer": {
+          "vehicle": {
+            "model": "Kaiyi X3 Pro",
+            "number": "01569GLА",
+            "color": "белый"
+          },
+          "fullname": "Kurashov Anvar Keldiyorovich"
+        },
+        "source": {
+          "address_id": "5bfb9f4f4a604facbb29a398b4b8b2bc",
+          "fullname": "Toshkent, Muqimiy koʻchasi, 19A",
+          "geopoint": [
+            69.2475766213,
+            41.2783179354
+          ],
+          "locale": "uz"
+        },
+        "destination": {
+          "address_id": "07ff097375a5443a9c6d2c6eef6ff356",
+          "fullname": "Toshkent, Feruza koʻchasi, 1",
+          "geopoint": [
+            69.3581008088,
+            41.354762731
+          ],
+          "locale": "uz"
+        },
+        "cost": 0.0,
+        "cost_with_vat": 0.0,
+        "cost_center_values": [
+          {
+            "id": "cost_center",
+            "title": "Safar maqsadi",
+            "value": ""
+          },
+          {
+            "id": "7994de59-7af6-4201-950c-a9f07b01db08",
+            "title": "Parametr",
+            "value": ""
+          }
+        ]
+      }
+    },
+    {
+      "id": "549d835952f2d63694adf277361421bb",
+      "title": "Ташкент, улица Садыка Азимова, 50",
+      "amount": 0.0,
+      "staff_name": "BAXA ",
+      "org_name": "DRIVE TAXI 777 MCHJ",
+      "status": "Bajarilgan",
+      "details": "Manzil: Ташкент, Чиланзарский район, массив Чиланзар, 5-й квартал, 47 | Sana: 2025-10-15T16:57:27+03:00 | Klass: captive_auto3",
+      "info": {
+        "id": "549d835952f2d63694adf277361421bb",
+        "user_id": "3580132b7ef54c0eaa3bd8050f019716",
+        "class": "captive_auto3",
+        "status": "complete",
+        "due_date": "2025-10-15T16:57:27+03:00",
+        "finished_date": "2025-10-15T17:24:37.188000+03:00",
+        "performer": {
+          "vehicle": {
+            "model": "Leapmotor C11",
+            "number": "10R817LВ",
+            "color": "серый"
+          },
+          "fullname": "Xoltursinov Asadbek Uktam O'g'li"
+        },
+        "source": {
+          "address_id": "599666ebab36457e8800d37351db5092",
+          "fullname": "Ташкент, улица Садыка Азимова, 50",
+          "geopoint": [
+            69.29134112748588,
+            41.30688040850059
+          ],
+          "locale": "ru"
+        },
+        "destination": {
+          "address_id": "fa8f151da7874a7b9890e0a55a725d07",
+          "fullname": "Ташкент, Чиланзарский район, массив Чиланзар, 5-й квартал, 47",
+          "geopoint": [
+            69.21306232845959,
+            41.29196243249298
+          ],
+          "locale": "ru"
+        },
+        "cost": 0.0,
+        "cost_with_vat": 0.0,
+        "toll_roads": {
+          "user_chose_toll_road": false,
+          "user_had_choice": false
+        }
+      }
+    },
+    {
+      "id": "fece73a2a076bd6787bafd39a9a3c0f8",
+      "title": "Toshkent, Chilonzor tumani, Bunyodkor shoh koʻchasi, 25",
+      "amount": 0.0,
+      "staff_name": "MIRZOHID",
+      "org_name": "DRIVE TAXI 777 MCHJ",
+      "status": "Bajarilgan",
+      "details": "Manzil: Toshkent, Mingoʻrik 4-berk koʻchasi, 32B | Sana: 2025-10-11T22:36:01+03:00 | Klass: captive_auto",
+      "info": {
+        "id": "fece73a2a076bd6787bafd39a9a3c0f8",
+        "user_id": "1f441d85410b49fe9ffa2b7354a38ac0",
+        "class": "captive_auto",
+        "status": "complete",
+        "due_date": "2025-10-11T22:36:01+03:00",
+        "finished_date": "2025-10-11T22:47:26.027000+03:00",
+        "performer": {
+          "vehicle": {
+            "model": "Leapmotor C11",
+            "number": "10R817LВ",
+            "color": "серый"
+          },
+          "fullname": "Xoltursinov Asadbek Uktam O'g'li"
+        },
+        "source": {
+          "address_id": "19865b7ab903430b80d1397ce1633435",
+          "fullname": "Toshkent, Chilonzor tumani, Bunyodkor shoh koʻchasi, 25",
+          "geopoint": [
+            69.2051245,
+            41.2738121
+          ],
+          "locale": "uz"
+        },
+        "destination": {
+          "address_id": "6f25a4bc0e27494ba233fb1705966598",
+          "fullname": "Toshkent, Mingoʻrik 4-berk koʻchasi, 32B",
+          "geopoint": [
+            69.27414804978238,
+            41.28065680148334
+          ],
+          "locale": "uz"
+        },
+        "cost": 0.0,
+        "cost_with_vat": 0.0,
+        "toll_roads": {
+          "user_chose_toll_road": false,
+          "user_had_choice": false
+        }
+      }
+    },
+    {
+      "id": "37ede413a7e9e056aa649f838d19847f",
+      "title": "Ташкент, Мирзо-Улугбекский район, массив Карасу, 2-й квартал, 47Б",
+      "amount": 0.0,
+      "staff_name": "OYBEK",
+      "org_name": "DRIVE TAXI 777 MCHJ",
+      "status": "Bajarilgan",
+      "details": "Manzil: Ташкент, Янгихаётский район, 9-й строительный участок, 1А | Sana: 2025-10-11T21:52:48+03:00 | Klass: captive_auto",
+      "info": {
+        "id": "37ede413a7e9e056aa649f838d19847f",
+        "user_id": "7519060c325f4e4c85a5646c7fd0011e",
+        "class": "captive_auto",
+        "status": "complete",
+        "due_date": "2025-10-11T21:52:48+03:00",
+        "finished_date": "2025-10-11T22:31:03.145000+03:00",
+        "performer": {
+          "vehicle": {
+            "model": "Kaiyi X3 Pro",
+            "number": "01569GLА",
+            "color": "белый"
+          },
+          "fullname": "Kurashov Anvar Keldiyorovich"
+        },
+        "source": {
+          "address_id": "4f1075ffba2f4878ae24bf22fe701c12",
+          "fullname": "Ташкент, Мирзо-Улугбекский район, массив Карасу, 2-й квартал, 47Б",
+          "geopoint": [
+            69.36840032375817,
+            41.33436715450838
+          ],
+          "locale": "ru"
+        },
+        "destination": {
+          "address_id": "5dfe35e747cf4bdcbf5f8985a33c028c",
+          "fullname": "Ташкент, Янгихаётский район, 9-й строительный участок, 1А",
+          "geopoint": [
+            69.19313605738279,
+            41.20629067920465
+          ],
+          "locale": "ru"
+        },
+        "cost": 0.0,
+        "cost_with_vat": 0.0,
+        "toll_roads": {
+          "user_chose_toll_road": false,
+          "user_had_choice": false
+        }
+      }
+    },
+    {
+      "id": "04257ae9463ac152a7eb8c81ef0a90e7",
+      "title": "Toshkent, Shirin koʻchasi, 27",
+      "amount": 0.0,
+      "staff_name": "MIRZOHID",
+      "org_name": "DRIVE TAXI 777 MCHJ",
+      "status": "Bajarilgan",
+      "details": "Manzil: Toshkent, Mingoʻrik 4-berk koʻchasi, 32B | Sana: 2025-10-11T19:45:01+03:00 | Klass: captive_auto",
+      "info": {
+        "id": "04257ae9463ac152a7eb8c81ef0a90e7",
+        "user_id": "1f441d85410b49fe9ffa2b7354a38ac0",
+        "class": "captive_auto",
+        "status": "complete",
+        "due_date": "2025-10-11T19:45:01+03:00",
+        "finished_date": "2025-10-11T20:23:07.843000+03:00",
+        "performer": {
+          "vehicle": {
+            "model": "Leapmotor C11",
+            "number": "10R817LВ",
+            "color": "серый"
+          },
+          "fullname": "Xoltursinov Asadbek Uktam O'g'li"
+        },
+        "source": {
+          "address_id": "98fb531517864bb1a74a7516725248a5",
+          "fullname": "Toshkent, Shirin koʻchasi, 27",
+          "geopoint": [
+            69.1792797,
+            41.2833565
+          ],
+          "locale": "uz"
+        },
+        "destination": {
+          "address_id": "e8655f1e39dc4d77be758f742c1683ad",
+          "fullname": "Toshkent, Mingoʻrik 4-berk koʻchasi, 32B",
+          "geopoint": [
+            69.27414804978238,
+            41.28065680148334
+          ],
+          "locale": "uz"
+        },
+        "cost": 0.0,
+        "cost_with_vat": 0.0,
+        "toll_roads": {
+          "user_chose_toll_road": false,
+          "user_had_choice": false
+        }
+      }
+    },
+    {
+      "id": "5dc5e82f23961dda898d91f08cc9ebed",
+      "title": "Toshkent, Uchtepa tumani, Shirin mahalla fuqarolar yigʻini",
+      "amount": 0.0,
+      "staff_name": "KAMOL MAHMUDJON",
+      "org_name": "DRIVE TAXI 777 MCHJ",
+      "status": "Bajarilgan",
+      "details": "Manzil: Toshkent, Shayxontohur tumani, Qoratosh dahasi, 8 | Sana: 2025-10-10T19:10:17+03:00 | Klass: captive_auto",
+      "info": {
+        "id": "5dc5e82f23961dda898d91f08cc9ebed",
+        "user_id": "2372935c091445fb984b34f6d4a437fb",
+        "class": "captive_auto",
+        "status": "complete",
+        "due_date": "2025-10-10T19:10:17+03:00",
+        "finished_date": "2025-10-10T19:28:27.394000+03:00",
+        "performer": {
+          "vehicle": {
+            "model": "Chevrolet Lacetti",
+            "number": "70D860НВ",
+            "color": "белый"
+          },
+          "fullname": "Nurxonov Abdulxay Nurxon O'g'li"
+        },
+        "source": {
+          "address_id": "c4f72106b5ac4969b61244eb99e89fd6",
+          "fullname": "Toshkent, Uchtepa tumani, Shirin mahalla fuqarolar yigʻini",
+          "geopoint": [
+            69.18450912818732,
+            41.27327713976754
+          ],
+          "locale": "uz"
+        },
+        "destination": {
+          "address_id": "e8e87a7750be4b65b1ea73eb02641a89",
+          "fullname": "Toshkent, Shayxontohur tumani, Qoratosh dahasi, 8",
+          "geopoint": [
+            69.23442926317553,
+            41.316836851372834
+          ],
+          "locale": "uz"
+        },
+        "cost": 0.0,
+        "cost_with_vat": 0.0,
+        "toll_roads": {
+          "user_chose_toll_road": false,
+          "user_had_choice": false
+        }
+      }
+    },
+    {
+      "id": "1e3e12e036b829be91cd64048dd65963",
+      "title": "Ташкент, улица Узбекистон Овози, 2/1",
+      "amount": 0.0,
+      "staff_name": "AKBAR",
+      "org_name": "DRIVE TAXI 777 MCHJ",
+      "status": "Bajarilgan",
+      "details": "Manzil: Ташкент, улица Узбекистон Овози, 2/1 | Sana: 2025-10-10T17:29:59+03:00 | Klass: captive_auto",
+      "info": {
+        "id": "1e3e12e036b829be91cd64048dd65963",
+        "user_id": "fb422eaf53db4065b317ac44cd7afd94",
+        "class": "captive_auto",
+        "status": "complete",
+        "due_date": "2025-10-10T17:29:59+03:00",
+        "finished_date": "2025-10-10T17:52:55.579000+03:00",
+        "performer": {
+          "vehicle": {
+            "model": "Kaiyi X3 Pro",
+            "number": "01569GLА",
+            "color": "белый"
+          },
+          "fullname": "Kurashov Anvar Keldiyorovich"
+        },
+        "source": {
+          "address_id": "04055c7ca70e40f8a49d92f76116ebf7",
+          "fullname": "Ташкент, улица Узбекистон Овози, 2/1",
+          "geopoint": [
+            69.28475977778344,
+            41.31053858378081
+          ],
+          "locale": "ru"
+        },
+        "destination": {
+          "fullname": "Ташкент, улица Узбекистон Овози, 2/1",
+          "geopoint": [
+            69.28474762,
+            41.30986504
+          ],
+          "locale": "ru"
+        },
+        "cost": 0.0,
+        "cost_with_vat": 0.0
+      }
+    },
+    {
+      "id": "2cc7adfda5c92c2499853b8f212f580d",
+      "title": "Ташкент, 4-й тупик Мингурик, 32А",
+      "amount": 0.0,
+      "staff_name": "Durdona",
+      "org_name": "DRIVE TAXI 777 MCHJ",
+      "status": "Bajarilgan",
+      "details": "Manzil: Узбекистан, Ташкент, улица Ширин, 27, Kotta bola | Sana: 2025-10-10T13:39:22+03:00 | Klass: captive_auto2",
+      "info": {
+        "id": "2cc7adfda5c92c2499853b8f212f580d",
+        "user_id": "6c74aa3741714af2be35445b824c4d44",
+        "class": "captive_auto2",
+        "status": "complete",
+        "due_date": "2025-10-10T13:39:22+03:00",
+        "finished_date": "2025-10-10T14:16:20.409000+03:00",
+        "performer": {
+          "vehicle": {
+            "model": "BYD Song Plus",
+            "number": "01Т567РВ",
+            "color": "белый"
+          },
+          "fullname": "Normamatov Botir Po`Latovich"
+        },
+        "source": {
+          "address_id": "913b0380c4334e028f6845c3c72810bd",
+          "fullname": "Ташкент, 4-й тупик Мингурик, 32А",
+          "geopoint": [
+            69.27381416275806,
+            41.28061504425432
+          ],
+          "locale": "ru"
+        },
+        "destination": {
+          "address_id": "6608c4871fcc4f5cbc6176d96c614e98",
+          "fullname": "Узбекистан, Ташкент, улица Ширин, 27, Kotta bola",
+          "geopoint": [
+            69.179328,
+            41.283395
+          ],
+          "locale": "ru"
+        },
+        "cost": 0.0,
+        "cost_with_vat": 0.0
+      }
+    },
+    {
+      "id": "315c408997ff2d89a74a1446273d771e",
+      "title": "Tashkent, Shota Rustaveli Street, 53А",
+      "amount": 0.0,
+      "staff_name": "MALIKA",
+      "org_name": "DRIVE TAXI 777 MCHJ",
+      "status": "Bajarilgan",
+      "details": "Manzil: Tashkent, Yunusabad District, Abdullah Qadiri Street, 1 | Sana: 2025-10-10T08:46:42+03:00 | Klass: captive_auto3",
+      "info": {
+        "id": "315c408997ff2d89a74a1446273d771e",
+        "user_id": "236080263db64ac7bc87be039cdd672e",
+        "class": "captive_auto3",
+        "status": "complete",
+        "due_date": "2025-10-10T08:46:42+03:00",
+        "finished_date": "2025-10-10T09:12:47.737000+03:00",
+        "performer": {
+          "vehicle": {
+            "model": "Hongqi E-QM5",
+            "number": "01Z493VС",
+            "color": "чёрный"
+          },
+          "fullname": "Nuriddinov Bunyod Erkin O'g'li"
+        },
+        "source": {
+          "address_id": "b92b54532be14ba7856865e0c1efcd27",
+          "fullname": "Tashkent, Shota Rustaveli Street, 53А",
+          "geopoint": [
+            69.25114668387381,
+            41.282650998797415
+          ],
+          "porchnumber": "4",
+          "locale": "en"
+        },
+        "destination": {
+          "address_id": "b1526abfece7453692c978a1a0f89935",
+          "fullname": "Tashkent, Yunusabad District, Abdullah Qadiri Street, 1",
+          "geopoint": [
+            69.2834,
+            41.32197
+          ],
+          "locale": "en"
+        },
+        "cost": 0.0,
+        "cost_with_vat": 0.0
+      }
+    },
+    {
+      "id": "2c223fd8c16ad2899f796239cb7d0723",
+      "title": "Toshkent, Shirin koʻchasi, 27",
+      "amount": 0.0,
+      "staff_name": "ERKIN",
+      "org_name": "DRIVE TAXI 777 MCHJ",
+      "status": "Bajarilgan",
+      "details": "Manzil: Toshkent, Usta Olim ko'chasi, 2A | Sana: 2025-10-10T05:59:45+03:00 | Klass: captive_auto2",
+      "info": {
+        "id": "2c223fd8c16ad2899f796239cb7d0723",
+        "user_id": "8e948f02d1b349dc9a5872b5483de313",
+        "class": "captive_auto2",
+        "status": "complete",
+        "due_date": "2025-10-10T05:59:45+03:00",
+        "finished_date": "2025-10-10T06:25:37.055000+03:00",
+        "performer": {
+          "vehicle": {
+            "model": "Hongqi E-QM5",
+            "number": "01Z493VС",
+            "color": "чёрный"
+          },
+          "fullname": "Nuriddinov Bunyod Erkin O'g'li"
+        },
+        "source": {
+          "address_id": "d0ec3fce688a4ceaa0097d7a6360b300",
+          "fullname": "Toshkent, Shirin koʻchasi, 27",
+          "geopoint": [
+            69.17939591113416,
+            41.28330884021385
+          ],
+          "locale": "uz"
+        },
+        "destination": {
+          "address_id": "ae852547741b48dca4615b753255a45a",
+          "fullname": "Toshkent, Usta Olim ko'chasi, 2A",
+          "geopoint": [
+            69.2552165318966,
+            41.33659585936058
+          ],
+          "locale": "uz"
+        },
+        "cost": 0.0,
+        "cost_with_vat": 0.0,
+        "toll_roads": {
+          "user_chose_toll_road": false,
+          "user_had_choice": false
+        }
+      }
+    },
+    {
+      "id": "ba676ca93adbdc32a9216661c04b1c8c",
+      "title": "Tashkent, Mirzo Ulugbek District, Buyuk Ipak Yuli Residential Area, 2",
+      "amount": 0.0,
+      "staff_name": "MALIKA",
+      "org_name": "DRIVE TAXI 777 MCHJ",
+      "status": "Bajarilgan",
+      "details": "Manzil: Uzbekistan, Tashkent, Muqimiy Street, 3A, Diet Cafe | Sana: 2025-10-09T18:27:59+03:00 | Klass: captive_auto3",
+      "info": {
+        "id": "ba676ca93adbdc32a9216661c04b1c8c",
+        "user_id": "236080263db64ac7bc87be039cdd672e",
+        "class": "captive_auto3",
+        "status": "complete",
+        "due_date": "2025-10-09T18:27:59+03:00",
+        "finished_date": "2025-10-09T18:57:52.351000+03:00",
+        "performer": {
+          "vehicle": {
+            "model": "Leapmotor C01",
+            "number": "01С423VС",
+            "color": "белый"
+          },
+          "fullname": "Ro'ziyev Farrux Abdusottorovich"
+        },
+        "source": {
+          "address_id": "6918ef0911eb491289b7633fb0f9fd28",
+          "fullname": "Tashkent, Mirzo Ulugbek District, Buyuk Ipak Yuli Residential Area, 2",
+          "geopoint": [
+            69.28728842792076,
+            41.31422123329414
+          ],
+          "locale": "en"
+        },
+        "interim_destinations": [
+          {
+            "address_id": "5c8473646f9b4b2d959897169a094af9",
+            "fullname": "Tashkent, Shota Rustaveli Street, 53А",
+            "geopoint": [
+              69.25144311776792,
+              41.28262080204519
+            ],
+            "porchnumber": "4",
+            "locale": "en"
+          }
+        ],
+        "destination": {
+          "address_id": "8a899d167b93488b988d78cd917c02b1",
+          "fullname": "Uzbekistan, Tashkent, Muqimiy Street, 3A, Diet Cafe",
+          "geopoint": [
+            69.24312689783292,
+            41.27934044332102
+          ],
+          "locale": "en"
+        },
+        "cost": 0.0,
+        "cost_with_vat": 0.0
+      }
+    },
+    {
+      "id": "db8a9191c4533e4ab324d28445d18438",
+      "title": "Toshkent, Alisher Navoiy koʻchasi, 34",
+      "amount": 0.0,
+      "staff_name": "KAMOL MAHMUDJON",
+      "org_name": "DRIVE TAXI 777 MCHJ",
+      "status": "Bajarilgan",
+      "details": "Manzil: Toshkent, Chilonzor tumani, Chilonzor dahasi, 19-mavze, 25 | Sana: 2025-10-09T15:20:16+03:00 | Klass: captive_auto3",
+      "info": {
+        "id": "db8a9191c4533e4ab324d28445d18438",
+        "user_id": "2372935c091445fb984b34f6d4a437fb",
+        "class": "captive_auto3",
+        "status": "complete",
+        "due_date": "2025-10-09T15:20:16+03:00",
+        "finished_date": "2025-10-09T16:28:06.856000+03:00",
+        "performer": {
+          "vehicle": {
+            "model": "Hongqi E-QM5",
+            "number": "01Z493VС",
+            "color": "чёрный"
+          },
+          "fullname": "Nuriddinov Bunyod Erkin O'g'li"
+        },
+        "source": {
+          "address_id": "8d65263d6263496a910014d17c6715de",
+          "fullname": "Toshkent, Alisher Navoiy koʻchasi, 34",
+          "geopoint": [
+            69.2452387738069,
+            41.321950680853384
+          ],
+          "locale": "uz"
+        },
+        "interim_destinations": [
+          {
+            "address_id": "0dc85aa68f7d4d9696bf510cc0cd5392",
+            "fullname": "Toshkent, Sergeli tumani, Sergeli-VIa dahasi, 6",
+            "geopoint": [
+              69.212368,
+              41.22852499999999
+            ],
+            "locale": "uz"
+          }
+        ],
+        "destination": {
+          "address_id": "39cd5c7952954a75b3cbddf66ff0219d",
+          "fullname": "Toshkent, Chilonzor tumani, Chilonzor dahasi, 19-mavze, 25",
+          "geopoint": [
+            69.18485,
+            41.27265
+          ],
+          "locale": "uz"
+        },
+        "cost": 0.0,
+        "cost_with_vat": 0.0,
+        "toll_roads": {
+          "user_chose_toll_road": false,
+          "user_had_choice": false
+        }
+      }
+    },
+    {
+      "id": "889f294a5d74b2a99c9a629237fe352f",
+      "title": "Ташкент, Мирабадский район, 7-й тупик Мираншаха, 32А",
+      "amount": 0.0,
+      "staff_name": "SHAMSHER",
+      "org_name": "TEST",
+      "status": "Bajarilgan",
+      "details": "Manzil: Узбекистан, Ташкент, улица Ширин, 27, Kotta bola | Sana: 2025-10-09T13:02:08+03:00 | Klass: captive_auto2",
+      "info": {
+        "id": "889f294a5d74b2a99c9a629237fe352f",
+        "user_id": "ae1d46a93e7148d388999f3147094259",
+        "class": "captive_auto2",
+        "status": "complete",
+        "due_date": "2025-10-09T13:02:08+03:00",
+        "finished_date": "2025-10-09T13:45:11.453000+03:00",
+        "performer": {
+          "vehicle": {
+            "model": "BYD Song Plus",
+            "number": "01Т567РВ",
+            "color": "белый"
+          },
+          "fullname": "Normamatov Botir Po`Latovich"
+        },
+        "source": {
+          "address_id": "95e95749f9f84dd085b930f8c69fa3cb",
+          "fullname": "Ташкент, Мирабадский район, 7-й тупик Мираншаха, 32А",
+          "geopoint": [
+            69.27386578168725,
+            41.280697429964725
+          ],
+          "porchnumber": "2",
+          "locale": "ru"
+        },
+        "destination": {
+          "address_id": "f6c50e93cbf140db9f0efc87d84454b5",
+          "fullname": "Узбекистан, Ташкент, улица Ширин, 27, Kotta bola",
+          "geopoint": [
+            69.179328,
+            41.283395
+          ],
+          "locale": "ru"
+        },
+        "cost": 0.0,
+        "cost_with_vat": 0.0
+      }
+    },
+    {
+      "id": "e3429c4a6bc928e88dc8be474bd30980",
+      "title": "Tashkent, Mustaqillik Avenue, 22",
+      "amount": 0.0,
+      "staff_name": "MALIKA",
+      "org_name": "DRIVE TAXI 777 MCHJ",
+      "status": "Bajarilgan",
+      "details": "Manzil: Tashkent, Shota Rustaveli Street, 53А | Sana: 2025-10-08T20:23:58+03:00 | Klass: captive_auto2",
+      "info": {
+        "id": "e3429c4a6bc928e88dc8be474bd30980",
+        "user_id": "236080263db64ac7bc87be039cdd672e",
+        "class": "captive_auto2",
+        "status": "complete",
+        "due_date": "2025-10-08T20:23:58+03:00",
+        "finished_date": "2025-10-08T20:57:43.408000+03:00",
+        "performer": {
+          "vehicle": {
+            "model": "Kaiyi X3 Pro",
+            "number": "01569GLА",
+            "color": "белый"
+          },
+          "fullname": "Kurashov Anvar Keldiyorovich"
+        },
+        "source": {
+          "address_id": "727c9af5d71b48288aab4e3b76223103",
+          "fullname": "Tashkent, Mustaqillik Avenue, 22",
+          "geopoint": [
+            69.29228679191085,
+            41.31649885856028
+          ],
+          "locale": "en"
+        },
+        "destination": {
+          "address_id": "8cf5e0320b914da5b413d0df715c555b",
+          "fullname": "Tashkent, Shota Rustaveli Street, 53А",
+          "geopoint": [
+            69.25094384262806,
+            41.282788116799935
+          ],
+          "locale": "en"
+        },
+        "cost": 0.0,
+        "cost_with_vat": 0.0
+      }
+    },
+    {
+      "id": "8aa2454bbe44315dae559b398536d1ec",
+      "title": "Toshkent, Shayxontohur tumani, Qoratosh dahasi, 9",
+      "amount": 0.0,
+      "staff_name": "KAMOL MAHMUDJON",
+      "org_name": "DRIVE TAXI 777 MCHJ",
+      "status": "Bajarilgan",
+      "details": "Manzil: Oʻzbekiston, Toshkent, Bobur koʻchasi, 174/9, Magic City oilaviy bogʻi | Sana: 2025-10-08T18:30:39+03:00 | Klass: captive_auto2",
+      "info": {
+        "id": "8aa2454bbe44315dae559b398536d1ec",
+        "user_id": "2372935c091445fb984b34f6d4a437fb",
+        "class": "captive_auto2",
+        "status": "complete",
+        "due_date": "2025-10-08T18:30:39+03:00",
+        "finished_date": "2025-10-08T18:52:16.658000+03:00",
+        "performer": {
+          "vehicle": {
+            "model": "Kaiyi X3 Pro",
+            "number": "01569GLА",
+            "color": "белый"
+          },
+          "fullname": "Kurashov Anvar Keldiyorovich"
+        },
+        "source": {
+          "address_id": "7c4c924b6c99413996883bb8ac1f0040",
+          "fullname": "Toshkent, Shayxontohur tumani, Qoratosh dahasi, 9",
+          "geopoint": [
+            69.23481719250067,
+            41.31649722552324
+          ],
+          "locale": "uz"
+        },
+        "destination": {
+          "address_id": "f666c5f312fb4d40b22da26cdb38c032",
+          "fullname": "Oʻzbekiston, Toshkent, Bobur koʻchasi, 174/9, Magic City oilaviy bogʻi",
+          "geopoint": [
+            69.246335,
+            41.304216
+          ],
+          "locale": "uz"
+        },
+        "cost": 0.0,
+        "cost_with_vat": 0.0,
+        "toll_roads": {
+          "user_chose_toll_road": false,
+          "user_had_choice": false
+        }
+      }
+    },
+    {
+      "id": "cc4027c460f2b1b7acd21ec9ec3cceee",
+      "title": "Toshkent, Sharaf Rashidov Shoh ko‘chasi, 16",
+      "amount": 0.0,
+      "staff_name": "KAMOL MAHMUDJON",
+      "org_name": "DRIVE TAXI 777 MCHJ",
+      "status": "Bajarilgan",
+      "details": "Manzil: Toshkent, Shayxontohur tumani, Qoratosh dahasi, 3А | Sana: 2025-10-08T17:33:40+03:00 | Klass: captive_auto2",
+      "info": {
+        "id": "cc4027c460f2b1b7acd21ec9ec3cceee",
+        "user_id": "2372935c091445fb984b34f6d4a437fb",
+        "class": "captive_auto2",
+        "status": "complete",
+        "due_date": "2025-10-08T17:33:40+03:00",
+        "finished_date": "2025-10-08T17:59:16.243000+03:00",
+        "performer": {
+          "vehicle": {
+            "model": "Kaiyi X3 Pro",
+            "number": "01569GLА",
+            "color": "белый"
+          },
+          "fullname": "Kurashov Anvar Keldiyorovich"
+        },
+        "source": {
+          "address_id": "f52f1056a551458a922723928c1a4929",
+          "fullname": "Toshkent, Sharaf Rashidov Shoh ko‘chasi, 16",
+          "geopoint": [
+            69.27186684559251,
+            41.31864468141609
+          ],
+          "locale": "uz"
+        },
+        "destination": {
+          "address_id": "885ce8b2ff464eff9034300094620442",
+          "fullname": "Toshkent, Shayxontohur tumani, Qoratosh dahasi, 3А",
+          "geopoint": [
+            69.23409767117788,
+            41.31643901072371
+          ],
+          "locale": "uz"
+        },
+        "cost": 0.0,
+        "cost_with_vat": 0.0,
+        "toll_roads": {
+          "user_chose_toll_road": false,
+          "user_had_choice": false
+        }
+      }
+    },
+    {
+      "id": "2b9674d9afa83c7e87b1206b0617c271",
+      "title": "Toshkent, Alisher Navoiy koʻchasi, 30A",
+      "amount": 0.0,
+      "staff_name": "KAMOL MAHMUDJON",
+      "org_name": "DRIVE TAXI 777 MCHJ",
+      "status": "Bajarilgan",
+      "details": "Manzil: Toshkent, Sergeli tumani, Sergeli-VIa dahasi, 6 | Sana: 2025-10-08T11:03:40+03:00 | Klass: captive_auto2",
+      "info": {
+        "id": "2b9674d9afa83c7e87b1206b0617c271",
+        "user_id": "2372935c091445fb984b34f6d4a437fb",
+        "class": "captive_auto2",
+        "status": "complete",
+        "due_date": "2025-10-08T11:03:40+03:00",
+        "finished_date": "2025-10-08T11:40:06.061000+03:00",
+        "performer": {
+          "vehicle": {
+            "model": "Hongqi E-QM5",
+            "number": "01U320АD",
+            "color": "чёрный"
+          },
+          "fullname": "Azimov Xasan Abralovich"
+        },
+        "source": {
+          "address_id": "34bec13b281f4134b631c24ea0774d38",
+          "fullname": "Toshkent, Alisher Navoiy koʻchasi, 30A",
+          "geopoint": [
+            69.24756109521921,
+            41.32178909586617
+          ],
+          "locale": "uz"
+        },
+        "interim_destinations": [
+          {
+            "address_id": "f92e2f6ca1a74f2a94edd8163caaaad4",
+            "fullname": "Oʻzbekiston, Toshkent, Shayxontohur tumani, Beshyogʻoch dahasi, 1/1, NRG",
+            "geopoint": [
+              69.239497,
+              41.311095
+            ],
+            "locale": "uz"
+          }
+        ],
+        "destination": {
+          "address_id": "5f9453a8495b4ea1ac11f9032a993c06",
+          "fullname": "Toshkent, Sergeli tumani, Sergeli-VIa dahasi, 6",
+          "geopoint": [
+            69.212368,
+            41.22852499999999
+          ],
+          "locale": "uz"
+        },
+        "cost": 0.0,
+        "cost_with_vat": 0.0,
+        "toll_roads": {
+          "user_chose_toll_road": false,
+          "user_had_choice": false
+        }
+      }
+    },
+    {
+      "id": "d8c8850b24bcc77690b4b0ebf1ce3497",
+      "title": "Tashkent, Shota Rustaveli Street, 53А",
+      "amount": 0.0,
+      "staff_name": "MALIKA",
+      "org_name": "DRIVE TAXI 777 MCHJ",
+      "status": "Bajarilgan",
+      "details": "Manzil: Tashkent, Yunusabad District, Abdullah Qadiri Street, 1 | Sana: 2025-10-08T08:17:28+03:00 | Klass: captive_auto2",
+      "info": {
+        "id": "d8c8850b24bcc77690b4b0ebf1ce3497",
+        "user_id": "236080263db64ac7bc87be039cdd672e",
+        "class": "captive_auto2",
+        "status": "complete",
+        "due_date": "2025-10-08T08:17:28+03:00",
+        "finished_date": "2025-10-08T08:42:53.806000+03:00",
+        "performer": {
+          "vehicle": {
+            "model": "BYD Song Plus",
+            "number": "01D937QС",
+            "color": "белый"
+          },
+          "fullname": "Ibroximov Karimjon Zokir O`G`Li"
+        },
+        "source": {
+          "address_id": "f1a2b0fdffc94aefbc560042e65012ae",
+          "fullname": "Tashkent, Shota Rustaveli Street, 53А",
+          "geopoint": [
+            69.2511542506431,
+            41.28266113395369
+          ],
+          "porchnumber": "4",
+          "locale": "en"
+        },
+        "destination": {
+          "address_id": "a9f5328b33734289a7b17143e8ae037f",
+          "fullname": "Tashkent, Yunusabad District, Abdullah Qadiri Street, 1",
+          "geopoint": [
+            69.2834,
+            41.32197
+          ],
+          "locale": "en"
+        },
+        "cost": 0.0,
+        "cost_with_vat": 0.0
+      }
+    },
+    {
+      "id": "82fe18c1e32832a3a1b9c3e1e5bf2a5d",
+      "title": "Tashkent, Babur Street, 46",
+      "amount": 0.0,
+      "staff_name": "KAZBEK",
+      "org_name": "DRIVE TAXI 777 MCHJ",
+      "status": "Bajarilgan",
+      "details": "Manzil: Tashkent, Alisher Navoi Street, 13 | Sana: 2025-10-08T06:06:35+03:00 | Klass: captive_auto2",
+      "info": {
+        "id": "82fe18c1e32832a3a1b9c3e1e5bf2a5d",
+        "user_id": "01b9b0cc5bbc4b1189d77d333101b547",
+        "class": "captive_auto2",
+        "status": "complete",
+        "due_date": "2025-10-08T06:06:35+03:00",
+        "finished_date": "2025-10-08T06:32:17.338000+03:00",
+        "performer": {
+          "vehicle": {
+            "model": "Hongqi E-QM5",
+            "number": "01U320АD",
+            "color": "чёрный"
+          },
+          "fullname": "Azimov Xasan Abralovich"
+        },
+        "source": {
+          "address_id": "8ed184cbc9d14969a9ad5d8afb69534e",
+          "fullname": "Tashkent, Babur Street, 46",
+          "geopoint": [
+            69.2556484181997,
+            41.276586843314796
+          ],
+          "locale": "en"
+        },
+        "destination": {
+          "address_id": "c864629c43504d90bbdaa2295b66c468",
+          "fullname": "Tashkent, Alisher Navoi Street, 13",
+          "geopoint": [
+            69.26086110148306,
+            41.32037271109182
+          ],
+          "locale": "en"
+        },
+        "cost": 0.0,
+        "cost_with_vat": 0.0
+      }
+    },
+    {
+      "id": "9d88ba4cf74a809d80e5dfeb00c5d219",
+      "title": "Toshkent, Uchtepa tumani, Chilonzor dahasi, 12-mavze, 40A",
+      "amount": 0.0,
+      "staff_name": "ASAD",
+      "org_name": "DRIVE TAXI 777 MCHJ",
+      "status": "Bajarilgan",
+      "details": "Manzil: Toshkent, Chilonzor yoʻnalishi, Chilonzor metro bekati | Sana: 2025-10-06T20:03:52+03:00 | Klass: captive_auto2",
+      "info": {
+        "id": "9d88ba4cf74a809d80e5dfeb00c5d219",
+        "user_id": "8f86aafdea5e4d4fb3a9ef839b26f178",
+        "class": "captive_auto2",
+        "status": "complete",
+        "due_date": "2025-10-06T20:03:52+03:00",
+        "finished_date": "2025-10-06T20:11:39.563000+03:00",
+        "performer": {
+          "vehicle": {
+            "model": "Kia K5",
+            "number": "01D585LС",
+            "color": "белый"
+          },
+          "fullname": "Meyliyev Rustam Ruzimurot O'g'li"
+        },
+        "source": {
+          "address_id": "5798201bf0a94ac496c9d35c7ce47eec",
+          "fullname": "Toshkent, Uchtepa tumani, Chilonzor dahasi, 12-mavze, 40A",
+          "geopoint": [
+            69.1810149219484,
+            41.28186460752086
+          ],
+          "locale": "uz"
+        },
+        "destination": {
+          "address_id": "f82c157a2eb54281a116327057d17092",
+          "fullname": "Toshkent, Chilonzor yoʻnalishi, Chilonzor metro bekati",
+          "geopoint": [
+            69.20554473525769,
+            41.27464639518309
+          ],
+          "locale": "uz"
+        },
+        "cost": 0.0,
+        "cost_with_vat": 0.0,
+        "toll_roads": {
+          "user_chose_toll_road": false,
+          "user_had_choice": false
+        }
+      }
+    },
+    {
+      "id": "8802a99385a9da2f8bfcfa7a3f49db92",
+      "title": "Tashkent, Mirzo Ulugbek District, Shahrisabz Street, 1",
+      "amount": 0.0,
+      "staff_name": "MALIKA",
+      "org_name": "DRIVE TAXI 777 MCHJ",
+      "status": "Bajarilgan",
+      "details": "Manzil: Tashkent, Shota Rustaveli Street, 53А | Sana: 2025-10-06T17:32:02+03:00 | Klass: captive_auto2",
+      "info": {
+        "id": "8802a99385a9da2f8bfcfa7a3f49db92",
+        "user_id": "236080263db64ac7bc87be039cdd672e",
+        "class": "captive_auto2",
+        "status": "complete",
+        "due_date": "2025-10-06T17:32:02+03:00",
+        "finished_date": "2025-10-06T17:53:59.420000+03:00",
+        "performer": {
+          "vehicle": {
+            "model": "BYD Song Plus",
+            "number": "01Т567РВ",
+            "color": "белый"
+          },
+          "fullname": "Normamatov Botir Po`Latovich"
+        },
+        "source": {
+          "address_id": "d108d46491694673bbd2d9cfe53323db",
+          "fullname": "Tashkent, Mirzo Ulugbek District, Shahrisabz Street, 1",
+          "geopoint": [
+            69.28656817623752,
+            41.31315588963626
+          ],
+          "locale": "en"
+        },
+        "destination": {
+          "address_id": "838292fc76fa41ae8768cfdf1f0ec647",
+          "fullname": "Tashkent, Shota Rustaveli Street, 53А",
+          "geopoint": [
+            69.25094384262806,
+            41.282788116799935
+          ],
+          "locale": "en"
+        },
+        "cost": 0.0,
+        "cost_with_vat": 0.0
+      }
+    },
+    {
+      "id": "c0fc861c4f8cd6598b6b72a187e95493",
+      "title": "Toshkent, Alisher Navoiy koʻchasi",
+      "amount": 0.0,
+      "staff_name": "KAMOL MAHMUDJON",
+      "org_name": "DRIVE TAXI 777 MCHJ",
+      "status": "Bajarilgan",
+      "details": "Manzil: Toshkent, Yunusobod tumani, Yunusobod dahasi, 6-mavze, 44 | Sana: 2025-10-06T15:05:01+03:00 | Klass: captive_auto",
+      "info": {
+        "id": "c0fc861c4f8cd6598b6b72a187e95493",
+        "user_id": "2372935c091445fb984b34f6d4a437fb",
+        "class": "captive_auto",
+        "status": "complete",
+        "due_date": "2025-10-06T15:05:01+03:00",
+        "finished_date": "2025-10-06T15:31:10.652000+03:00",
+        "performer": {
+          "vehicle": {
+            "model": "Kia K5",
+            "number": "01D585LС",
+            "color": "белый"
+          },
+          "fullname": "Meyliyev Rustam Ruzimurot O'g'li"
+        },
+        "source": {
+          "address_id": "8d93df6f118d4be79c4fbb2bd8464712",
+          "fullname": "Toshkent, Alisher Navoiy koʻchasi",
+          "geopoint": [
+            69.27008733294021,
+            41.319170676271845
+          ],
+          "locale": "uz"
+        },
+        "interim_destinations": [
+          {
+            "address_id": "25592b1c1ed34f4bad6b5273ca6fe4ed",
+            "fullname": "Toshkent, Botir Zokirov koʻchasi, 7",
+            "geopoint": [
+              69.25141311488264,
+              41.31634154257709
+            ],
+            "locale": "uz"
+          }
+        ],
+        "destination": {
+          "address_id": "8b2bdbb1007b427d8a5fcd5292935405",
+          "fullname": "Toshkent, Yunusobod tumani, Yunusobod dahasi, 6-mavze, 44",
+          "geopoint": [
+            69.26406099286523,
+            41.3707954003822
+          ],
+          "locale": "uz"
+        },
+        "cost": 0.0,
+        "cost_with_vat": 0.0,
+        "toll_roads": {
+          "user_chose_toll_road": false,
+          "user_had_choice": false
+        }
+      }
+    },
+    {
+      "id": "cb0633b8ed27cfbaaf6601bde033148c",
+      "title": "Tashkent, Alisher Navoi Street, 13",
+      "amount": 0.0,
+      "staff_name": "KAZBEK",
+      "org_name": "DRIVE TAXI 777 MCHJ",
+      "status": "Bajarilgan",
+      "details": "Manzil: Tashkent, Babur Street, 48 | Sana: 2025-10-06T14:34:32+03:00 | Klass: captive_auto2",
+      "info": {
+        "id": "cb0633b8ed27cfbaaf6601bde033148c",
+        "user_id": "01b9b0cc5bbc4b1189d77d333101b547",
+        "class": "captive_auto2",
+        "status": "complete",
+        "due_date": "2025-10-06T14:34:32+03:00",
+        "finished_date": "2025-10-06T14:55:55.068000+03:00",
+        "performer": {
+          "vehicle": {
+            "model": "BYD Song Plus",
+            "number": "01D937QС",
+            "color": "белый"
+          },
+          "fullname": "Ibroximov Karimjon Zokir O`G`Li"
+        },
+        "source": {
+          "address_id": "cd9b26d8a2264e639a8ceef0434aea41",
+          "fullname": "Tashkent, Alisher Navoi Street, 13",
+          "geopoint": [
+            69.26135827996696,
+            41.32059574616745
+          ],
+          "locale": "en"
+        },
+        "destination": {
+          "address_id": "74479506549f4c68b7253115c18a08d2",
+          "fullname": "Tashkent, Babur Street, 48",
+          "geopoint": [
+            69.25512929273714,
+            41.2771565119878
+          ],
+          "locale": "en"
+        },
+        "cost": 0.0,
+        "cost_with_vat": 0.0
+      }
+    },
+    {
+      "id": "eb60601ae69520bc927da2c9b71f6dee",
+      "title": "Toshkent, Naqqoshlik koʻchasi, 4",
+      "amount": 0.0,
+      "staff_name": "MIRZOHID",
+      "org_name": "DRIVE TAXI 777 MCHJ",
+      "status": "Bajarilgan",
+      "details": "Manzil: Toshkent, Mingoʻrik 4-berk koʻchasi, 32B | Sana: 2025-10-06T14:19:44+03:00 | Klass: captive_auto",
+      "info": {
+        "id": "eb60601ae69520bc927da2c9b71f6dee",
+        "user_id": "1f441d85410b49fe9ffa2b7354a38ac0",
+        "class": "captive_auto",
+        "status": "complete",
+        "due_date": "2025-10-06T14:19:44+03:00",
+        "finished_date": "2025-10-06T14:33:41.329000+03:00",
+        "performer": {
+          "vehicle": {
+            "model": "Kia K5",
+            "number": "01D585LС",
+            "color": "белый"
+          },
+          "fullname": "Meyliyev Rustam Ruzimurot O'g'li"
+        },
+        "source": {
+          "address_id": "701ac4b7152e4e5f8d5a8fbc032b8663",
+          "fullname": "Toshkent, Naqqoshlik koʻchasi, 4",
+          "geopoint": [
+            69.20857057906687,
+            41.2716733943671
+          ],
+          "locale": "uz"
+        },
+        "destination": {
+          "address_id": "5d783ecb52a14ae0ad731f8507b83f5a",
+          "fullname": "Toshkent, Mingoʻrik 4-berk koʻchasi, 32B",
+          "geopoint": [
+            69.27414804978238,
+            41.28065680148334
+          ],
+          "locale": "uz"
+        },
+        "cost": 0.0,
+        "cost_with_vat": 0.0,
+        "toll_roads": {
+          "user_chose_toll_road": false,
+          "user_had_choice": false
+        }
+      }
+    },
+    {
+      "id": "892eac5d3f4116f8958e9e3266c8b5e2",
+      "title": "Toshkent, Uchtepa tumani, Shirin mahalla fuqarolar yigʻini",
+      "amount": 0.0,
+      "staff_name": "KAMOL MAHMUDJON",
+      "org_name": "DRIVE TAXI 777 MCHJ",
+      "status": "Bajarilgan",
+      "details": "Manzil: Toshkent, Mirzo Ulugʻbek koʻchasi, 41 | Sana: 2025-10-06T06:52:03+03:00 | Klass: captive_auto",
+      "info": {
+        "id": "892eac5d3f4116f8958e9e3266c8b5e2",
+        "user_id": "2372935c091445fb984b34f6d4a437fb",
+        "class": "captive_auto",
+        "status": "complete",
+        "due_date": "2025-10-06T06:52:03+03:00",
+        "finished_date": "2025-10-06T07:47:26.163000+03:00",
+        "performer": {
+          "vehicle": {
+            "model": "Chevrolet Cobalt",
+            "number": "80G737GА",
+            "color": "белый"
+          },
+          "fullname": "Turdiyev Valijon Yuldashovich"
+        },
+        "source": {
+          "address_id": "28c281ccac384e8ab273ee05d70589c0",
+          "fullname": "Toshkent, Uchtepa tumani, Shirin mahalla fuqarolar yigʻini",
+          "geopoint": [
+            69.18450912818732,
+            41.27327713976754
+          ],
+          "locale": "uz"
+        },
+        "destination": {
+          "address_id": "7ee323ad08e348a3835804cc4ec27306",
+          "fullname": "Toshkent, Mirzo Ulugʻbek koʻchasi, 41",
+          "geopoint": [
+            69.31901093879483,
+            41.3203482009164
+          ],
+          "locale": "uz"
+        },
+        "cost": 0.0,
+        "cost_with_vat": 0.0,
+        "toll_roads": {
+          "user_chose_toll_road": false,
+          "user_had_choice": false
+        }
+      }
+    },
+    {
+      "id": "f9668c4f7ecb3fa392919b95e39657bb",
+      "title": "Uzbekistan, Tashkent, Chilanzar District, Chilanzar Residential Area, 18-mavze, 8, Kotta Bola",
+      "amount": 0.0,
+      "staff_name": "KAZBEK",
+      "org_name": "DRIVE TAXI 777 MCHJ",
+      "status": "Bajarilgan",
+      "details": "Manzil: Tashkent, Babur Street, 48 | Sana: 2025-10-05T15:09:36+03:00 | Klass: captive_auto2",
+      "info": {
+        "id": "f9668c4f7ecb3fa392919b95e39657bb",
+        "user_id": "01b9b0cc5bbc4b1189d77d333101b547",
+        "class": "captive_auto2",
+        "status": "complete",
+        "due_date": "2025-10-05T15:09:36+03:00",
+        "finished_date": "2025-10-05T15:31:27.601000+03:00",
+        "performer": {
+          "vehicle": {
+            "model": "Kaiyi X3 Pro",
+            "number": "01569GLА",
+            "color": "белый"
+          },
+          "fullname": "Kurashov Anvar Keldiyorovich"
+        },
+        "source": {
+          "address_id": "7296073db9bd4175a25f5d1f35c2fb9b",
+          "fullname": "Uzbekistan, Tashkent, Chilanzar District, Chilanzar Residential Area, 18-mavze, 8, Kotta Bola",
+          "geopoint": [
+            69.18977,
+            41.27201
+          ],
+          "locale": "en"
+        },
+        "destination": {
+          "address_id": "95a9a60158fd4ea28eff43d65336fc14",
+          "fullname": "Tashkent, Babur Street, 48",
+          "geopoint": [
+            69.25523055362234,
+            41.27677435200928
+          ],
+          "locale": "en"
+        },
+        "cost": 0.0,
+        "cost_with_vat": 0.0
+      }
+    },
+    {
+      "id": "2f173e700ea32961871a224ac9d88be0",
+      "title": "Toshkent, Naqqoshlik koʻchasi, 3A",
+      "amount": 0.0,
+      "staff_name": "MIRZOHID",
+      "org_name": "DRIVE TAXI 777 MCHJ",
+      "status": "Bajarilgan",
+      "details": "Manzil: Toshkent, Mingoʻrik 4-berk koʻchasi, 32B | Sana: 2025-10-05T13:59:17+03:00 | Klass: captive_auto2",
+      "info": {
+        "id": "2f173e700ea32961871a224ac9d88be0",
+        "user_id": "1f441d85410b49fe9ffa2b7354a38ac0",
+        "class": "captive_auto2",
+        "status": "complete",
+        "due_date": "2025-10-05T13:59:17+03:00",
+        "finished_date": "2025-10-05T14:18:32.956000+03:00",
+        "performer": {
+          "vehicle": {
+            "model": "Leapmotor C11",
+            "number": "10R817LВ",
+            "color": "серый"
+          },
+          "fullname": "Xoltursinov Asadbek Uktam O'g'li"
+        },
+        "source": {
+          "address_id": "3bf40b5f8feb4f14b152409be77623f9",
+          "fullname": "Toshkent, Naqqoshlik koʻchasi, 3A",
+          "geopoint": [
+            69.20857057906687,
+            41.2716733943671
+          ],
+          "locale": "uz"
+        },
+        "destination": {
+          "address_id": "f81f1e7314c14b96a3eba07d62c73579",
+          "fullname": "Toshkent, Mingoʻrik 4-berk koʻchasi, 32B",
+          "geopoint": [
+            69.27414804978238,
+            41.28065680148334
+          ],
+          "locale": "uz"
+        },
+        "cost": 0.0,
+        "cost_with_vat": 0.0,
+        "toll_roads": {
+          "user_chose_toll_road": false,
+          "user_had_choice": false
+        }
+      }
+    },
+    {
+      "id": "f9b6cb2b6320d0308572e4e3410716d5",
+      "title": "Узбекистан, Ташкент, улица Ширин, 27, Kotta bola",
+      "amount": 0.0,
+      "staff_name": "SHAMSHER",
+      "org_name": "TEST",
+      "status": "Bajarilgan",
+      "details": "Manzil: Узбекистан, Ташкент, Чиланзарский район, массив Чиланзар, 18-й квартал, 8, Kotta Bola | Sana: 2025-10-04T17:11:45+03:00 | Klass: captive_auto",
+      "info": {
+        "id": "f9b6cb2b6320d0308572e4e3410716d5",
+        "user_id": "ae1d46a93e7148d388999f3147094259",
+        "class": "captive_auto",
+        "status": "complete",
+        "due_date": "2025-10-04T17:11:45+03:00",
+        "finished_date": "2025-10-04T17:11:11.462000+03:00",
+        "performer": {
+          "vehicle": {
+            "model": "Ravon Nexia R3",
+            "number": "01Е508SС",
+            "color": "белый"
+          },
+          "fullname": "Turaxanov Saidkarim Sayfiyevich"
+        },
+        "source": {
+          "address_id": "50865d0b6b9c4d44a5c04207995c3fae",
+          "fullname": "Узбекистан, Ташкент, улица Ширин, 27, Kotta bola",
+          "geopoint": [
+            69.17933,
+            41.2834
+          ],
+          "locale": "ru"
+        },
+        "destination": {
+          "address_id": "0114a91476c94095a9c132bfb5f83387",
+          "fullname": "Узбекистан, Ташкент, Чиланзарский район, массив Чиланзар, 18-й квартал, 8, Kotta Bola",
+          "geopoint": [
+            69.18977,
+            41.27201
+          ],
+          "locale": "ru"
+        },
+        "cost": 0.0,
+        "cost_with_vat": 0.0
+      }
+    },
+    {
+      "id": "7322314b42fde04e9227f292049e7c1c",
+      "title": "Ташкент, Мирзо-Улугбекский район, массив Карасу, 4-й массив Карасу, 4",
+      "amount": 0.0,
+      "staff_name": "OYBEK",
+      "org_name": "DRIVE TAXI 777 MCHJ",
+      "status": "Bajarilgan",
+      "details": "Manzil: Ташкент, Янгихаётский район, 9-й строительный участок, 1А | Sana: 2025-10-03T22:20:10+03:00 | Klass: captive_auto",
+      "info": {
+        "id": "7322314b42fde04e9227f292049e7c1c",
+        "user_id": "7519060c325f4e4c85a5646c7fd0011e",
+        "class": "captive_auto",
+        "status": "complete",
+        "due_date": "2025-10-03T22:20:10+03:00",
+        "finished_date": "2025-10-03T23:07:50.876000+03:00",
+        "performer": {
+          "vehicle": {
+            "model": "Kaiyi X3 Pro",
+            "number": "01569GLА",
+            "color": "белый"
+          },
+          "fullname": "Kurashov Anvar Keldiyorovich"
+        },
+        "source": {
+          "address_id": "1c74143e05c642f180a9f0c809aa449f",
+          "fullname": "Ташкент, Мирзо-Улугбекский район, массив Карасу, 4-й массив Карасу, 4",
+          "geopoint": [
+            69.37299924431241,
+            41.32949726463176
+          ],
+          "locale": "ru"
+        },
+        "destination": {
+          "address_id": "4551a6b962f449f380dc1d07ba9fedf4",
+          "fullname": "Ташкент, Янгихаётский район, 9-й строительный участок, 1А",
+          "geopoint": [
+            69.19313605738279,
+            41.20629067920465
+          ],
+          "locale": "ru"
+        },
+        "cost": 0.0,
+        "cost_with_vat": 0.0,
+        "toll_roads": {
+          "user_chose_toll_road": false,
+          "user_had_choice": false
+        }
+      }
+    },
+    {
+      "id": "51c748e1e704315e85e9b74076b47ad5",
+      "title": "Toshkent, Uchtepa tumani, Chilonzor dahasi, 12-mavze, 40A",
+      "amount": 0.0,
+      "staff_name": "ASAD",
+      "org_name": "DRIVE TAXI 777 MCHJ",
+      "status": "Bajarilgan",
+      "details": "Manzil: Toshkent, Chilonzor yoʻnalishi, Chilonzor metro bekati | Sana: 2025-10-03T20:08:21+03:00 | Klass: captive_auto2",
+      "info": {
+        "id": "51c748e1e704315e85e9b74076b47ad5",
+        "user_id": "8f86aafdea5e4d4fb3a9ef839b26f178",
+        "class": "captive_auto2",
+        "status": "complete",
+        "due_date": "2025-10-03T20:08:21+03:00",
+        "finished_date": "2025-10-03T20:19:50.055000+03:00",
+        "performer": {
+          "vehicle": {
+            "model": "Leapmotor C11",
+            "number": "10R817LВ",
+            "color": "серый"
+          },
+          "fullname": "Xoltursinov Asadbek Uktam O'g'li"
+        },
+        "source": {
+          "address_id": "9a3d8008309b43a181f860c46da87bfc",
+          "fullname": "Toshkent, Uchtepa tumani, Chilonzor dahasi, 12-mavze, 40A",
+          "geopoint": [
+            69.1810149219484,
+            41.28186460752086
+          ],
+          "locale": "uz"
+        },
+        "destination": {
+          "address_id": "bc053f25feb7404aa16f37f3b5556100",
+          "fullname": "Toshkent, Chilonzor yoʻnalishi, Chilonzor metro bekati",
+          "geopoint": [
+            69.20554473525769,
+            41.27464639518309
+          ],
+          "porchnumber": "entrance",
+          "locale": "uz"
+        },
+        "cost": 0.0,
+        "cost_with_vat": 0.0,
+        "toll_roads": {
+          "user_chose_toll_road": false,
+          "user_had_choice": false
+        }
+      }
+    },
+    {
+      "id": "3c10fc6a45f8d191b83418bf42d9b7f6",
+      "title": "Ташкент, улица Садыка Азимова, 50",
+      "amount": 0.0,
+      "staff_name": "BAXA ",
+      "org_name": "DRIVE TAXI 777 MCHJ",
+      "status": "Bajarilgan",
+      "details": "Manzil: Ташкент, Чиланзарский район, массив Чиланзар, 5-й квартал, 47 | Sana: 2025-10-03T17:14:38+03:00 | Klass: captive_auto2",
+      "info": {
+        "id": "3c10fc6a45f8d191b83418bf42d9b7f6",
+        "user_id": "3580132b7ef54c0eaa3bd8050f019716",
+        "class": "captive_auto2",
+        "status": "complete",
+        "due_date": "2025-10-03T17:14:38+03:00",
+        "finished_date": "2025-10-03T17:46:48.146000+03:00",
+        "performer": {
+          "vehicle": {
+            "model": "Kaiyi X3 Pro",
+            "number": "01569GLА",
+            "color": "белый"
+          },
+          "fullname": "Kurashov Anvar Keldiyorovich"
+        },
+        "source": {
+          "address_id": "efc3fb874f0346e3bffc0dc84dcc5838",
+          "fullname": "Ташкент, улица Садыка Азимова, 50",
+          "geopoint": [
+            69.29134112748588,
+            41.30688040850059
+          ],
+          "locale": "ru"
+        },
+        "destination": {
+          "address_id": "13fd2b68e9f044818d0df7c2bce5af33",
+          "fullname": "Ташкент, Чиланзарский район, массив Чиланзар, 5-й квартал, 47",
+          "geopoint": [
+            69.21306232845959,
+            41.29196243249298
+          ],
+          "locale": "ru"
+        },
+        "cost": 0.0,
+        "cost_with_vat": 0.0,
+        "toll_roads": {
+          "user_chose_toll_road": false,
+          "user_had_choice": false
+        }
+      }
+    },
+    {
+      "id": "8de19da18a4f82adae35f910f46958ba",
+      "title": "Узбекистан, Ташкент, Минфин, Минфин, Галерея",
+      "amount": 0.0,
+      "staff_name": "Durdona",
+      "org_name": "DRIVE TAXI 777 MCHJ",
+      "status": "Bajarilgan",
+      "details": "Manzil: Ташкент, 4-й тупик Мингурик, 32А | Sana: 2025-10-03T12:37:48+03:00 | Klass: captive_auto",
+      "info": {
+        "id": "8de19da18a4f82adae35f910f46958ba",
+        "user_id": "6c74aa3741714af2be35445b824c4d44",
+        "class": "captive_auto",
+        "status": "complete",
+        "due_date": "2025-10-03T12:37:48+03:00",
+        "finished_date": "2025-10-03T12:49:54.677000+03:00",
+        "performer": {
+          "vehicle": {
+            "model": "Kaiyi X3 Pro",
+            "number": "01569GLА",
+            "color": "белый"
+          },
+          "fullname": "Kurashov Anvar Keldiyorovich"
+        },
+        "source": {
+          "address_id": "149a85b4cc7f41bc824bf7262ae764d5",
+          "fullname": "Узбекистан, Ташкент, Минфин, Минфин, Галерея",
+          "geopoint": [
+            69.27174973795549,
+            41.31523502975494
+          ],
+          "locale": "ru"
+        },
+        "destination": {
+          "address_id": "5f8f2e0c2eba4ca5a8cb26039716fd42",
+          "fullname": "Ташкент, 4-й тупик Мингурик, 32А",
+          "geopoint": [
+            69.27376,
+            41.2806
+          ],
+          "locale": "ru"
+        },
+        "cost": 0.0,
+        "cost_with_vat": 0.0
+      }
+    },
+    {
+      "id": "da9ebc267497dfa2ab48f3d549290658",
+      "title": "Ташкент, Мирзо-Улугбекский район, улица Олмачи, 26",
+      "amount": 0.0,
+      "staff_name": "OYBEK",
+      "org_name": "DRIVE TAXI 777 MCHJ",
+      "status": "Bajarilgan",
+      "details": "Manzil: Узбекистан, Ташкент, БЦ Триллиант, Ташкент, БЦ Триллиант, Ташкент, Триллиант 1 | Sana: 2025-10-03T11:42:24+03:00 | Klass: captive_auto",
+      "info": {
+        "id": "da9ebc267497dfa2ab48f3d549290658",
+        "user_id": "7519060c325f4e4c85a5646c7fd0011e",
+        "class": "captive_auto",
+        "status": "complete",
+        "due_date": "2025-10-03T11:42:24+03:00",
+        "finished_date": "2025-10-03T12:00:24.367000+03:00",
+        "performer": {
+          "vehicle": {
+            "model": "Kaiyi X3 Pro",
+            "number": "01569GLА",
+            "color": "белый"
+          },
+          "fullname": "Kurashov Anvar Keldiyorovich"
+        },
+        "source": {
+          "address_id": "9d3d33f1fe7a4cb1ada667915131b6f0",
+          "fullname": "Ташкент, Мирзо-Улугбекский район, улица Олмачи, 26",
+          "geopoint": [
+            69.31492664707635,
+            41.320360538603836
+          ],
+          "locale": "ru"
+        },
+        "destination": {
+          "address_id": "4bf6e297f5e843a2b028cd39d6e5435a",
+          "fullname": "Узбекистан, Ташкент, БЦ Триллиант, Ташкент, БЦ Триллиант, Ташкент, Триллиант 1",
+          "geopoint": [
+            69.28322132021789,
+            41.31599358814312
+          ],
+          "locale": "ru"
+        },
+        "cost": 0.0,
+        "cost_with_vat": 0.0,
+        "toll_roads": {
+          "user_chose_toll_road": false,
+          "user_had_choice": false
+        }
+      }
+    },
+    {
+      "id": "c4775b00ac361460ad39f48c51797407",
+      "title": "Tashkent, Alisher Navoi Street, 13",
+      "amount": 0.0,
+      "staff_name": "KAZBEK",
+      "org_name": "DRIVE TAXI 777 MCHJ",
+      "status": "Bajarilgan",
+      "details": "Manzil: Tashkent, Yunusabad District, Adolat Mahallah, 4-mavze, 85 | Sana: 2025-10-03T11:06:05+03:00 | Klass: captive_auto2",
+      "info": {
+        "id": "c4775b00ac361460ad39f48c51797407",
+        "user_id": "01b9b0cc5bbc4b1189d77d333101b547",
+        "class": "captive_auto2",
+        "status": "complete",
+        "due_date": "2025-10-03T11:06:05+03:00",
+        "finished_date": "2025-10-03T11:31:06.385000+03:00",
+        "performer": {
+          "vehicle": {
+            "model": "Hongqi E-QM5",
+            "number": "01U320АD",
+            "color": "чёрный"
+          },
+          "fullname": "Azimov Xasan Abralovich"
+        },
+        "source": {
+          "address_id": "eccc8263138b4d7fb0c87a49f803f072",
+          "fullname": "Tashkent, Alisher Navoi Street, 13",
+          "geopoint": [
+            69.26135827996696,
+            41.32059574616745
+          ],
+          "locale": "en"
+        },
+        "destination": {
+          "address_id": "8c56038775324fe4836f1037fbc13d92",
+          "fullname": "Tashkent, Yunusabad District, Adolat Mahallah, 4-mavze, 85",
+          "geopoint": [
+            69.27693968472245,
+            41.36449246541377
+          ],
+          "locale": "en"
+        },
+        "cost": 0.0,
+        "cost_with_vat": 0.0
+      }
+    },
+    {
+      "id": "c7492baba48bb10e837b157e806452c8",
+      "title": "Ташкент, улица Ширин, 27",
+      "amount": 0.0,
+      "staff_name": "ABDUMAJID",
+      "org_name": "DRIVE TAXI 777 MCHJ",
+      "status": "Bajarilgan",
+      "details": "Manzil: Узбекистан, Ташкент, проспект Бунёдкор (дублёр), Chilonzor Metro Station | Sana: 2025-10-03T10:15:28+03:00 | Klass: captive_auto3",
+      "info": {
+        "id": "c7492baba48bb10e837b157e806452c8",
+        "user_id": "5f42c5816a6a4e578d89efe180ca853a",
+        "class": "captive_auto3",
+        "status": "complete",
+        "due_date": "2025-10-03T10:15:28+03:00",
+        "finished_date": "2025-10-03T10:35:08.130000+03:00",
+        "performer": {
+          "vehicle": {
+            "model": "Leapmotor C11",
+            "number": "10R817LВ",
+            "color": "серый"
+          },
+          "fullname": "Xoltursinov Asadbek Uktam O'g'li"
+        },
+        "source": {
+          "address_id": "bfa67a92ca5645ea996ad54167095821",
+          "fullname": "Ташкент, улица Ширин, 27",
+          "geopoint": [
+            69.1791496122181,
+            41.2833267254015
+          ],
+          "locale": "ru"
+        },
+        "destination": {
+          "address_id": "c11bc5efc7864afe9f37ada1732c53e9",
+          "fullname": "Узбекистан, Ташкент, проспект Бунёдкор (дублёр), Chilonzor Metro Station",
+          "geopoint": [
+            69.204033,
+            41.272805
+          ],
+          "locale": "ru"
+        },
+        "cost": 0.0,
+        "cost_with_vat": 0.0
+      }
+    },
+    {
+      "id": "488c573d770214c9bebb6e0f2d9ec9ff",
+      "title": "Tashkent, Shota Rustaveli Street, 55",
+      "amount": 0.0,
+      "staff_name": "MALIKA",
+      "org_name": "DRIVE TAXI 777 MCHJ",
+      "status": "Bajarilgan",
+      "details": "Manzil: Tashkent, Yunusabad District, Abdullah Qadiri Street, 1 | Sana: 2025-10-03T08:05:47+03:00 | Klass: captive_auto2",
+      "info": {
+        "id": "488c573d770214c9bebb6e0f2d9ec9ff",
+        "user_id": "236080263db64ac7bc87be039cdd672e",
+        "class": "captive_auto2",
+        "status": "complete",
+        "due_date": "2025-10-03T08:05:47+03:00",
+        "finished_date": "2025-10-03T08:32:26.977000+03:00",
+        "performer": {
+          "vehicle": {
+            "model": "Hongqi E-QM5",
+            "number": "01U320АD",
+            "color": "чёрный"
+          },
+          "fullname": "Azimov Xasan Abralovich"
+        },
+        "source": {
+          "address_id": "2a0e245ed72a414fb430df1a0a5c79eb",
+          "fullname": "Tashkent, Shota Rustaveli Street, 55",
+          "geopoint": [
+            69.25037211329173,
+            41.282272810328294
+          ],
+          "locale": "en"
+        },
+        "destination": {
+          "address_id": "1dc8f3710c584ac995eff9147dd4a879",
+          "fullname": "Tashkent, Yunusabad District, Abdullah Qadiri Street, 1",
+          "geopoint": [
+            69.2834,
+            41.32197
+          ],
+          "locale": "en"
+        },
+        "cost": 0.0,
+        "cost_with_vat": 0.0
+      }
+    }
+  ],
+  "last_update": 1760556546
+}
